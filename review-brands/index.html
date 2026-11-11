@@ -266,10 +266,21 @@ a{color:inherit}
 .fst:hover{background:#35302F}
 .fst .fh{font-weight:700;font-size:var(--t-body);color:var(--paper)}
 
-/* ---------- sizing ---------- */
-.dim{display:grid;grid-template-columns:calc(480*var(--px)) minmax(0,1fr);gap:calc(24*var(--px))}
-.packs{display:grid;grid-template-columns:1fr 1fr;gap:calc(16*var(--px))}
-.packs .card{padding:calc(28*var(--px));gap:calc(8*var(--px))}
+/* ---------- starting point ---------- */
+.assets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(24*var(--px))}
+.ast{background:var(--sand2);border-top:max(3px,calc(4*var(--px))) solid var(--ink);padding:calc(28*var(--px));display:flex;flex-direction:column;gap:calc(8*var(--px));transition:transform .4s var(--ease)}
+.ast:hover{transform:translateY(-4px)}
+.ast .stat{font-size:max(34px,calc(56*var(--px)))}
+.ast.dk{background:var(--ink);color:var(--paper);border-top-color:var(--red)}
+.ast.dk .soft{color:var(--mutd)}
+
+/* ---------- opportunities ---------- */
+.opp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:calc(56*var(--px))}
+.oc{display:flex;flex-direction:column;gap:calc(14*var(--px))}
+.oh{display:flex;align-items:center;gap:calc(24*var(--px));padding-bottom:calc(6*var(--px))}
+.oh img{width:calc(128*var(--px));min-width:84px;height:calc(68*var(--px));min-height:45px;object-fit:contain;object-position:left center;flex:none}
+.oi{border-top:1px solid var(--lined);padding-top:calc(14*var(--px));display:flex;flex-direction:column;gap:calc(6*var(--px))}
+.oi .rt{font-family:var(--fd);font-weight:900;margin-right:.4em}
 
 /* ---------- HUD ---------- */
 .progress{position:fixed;left:0;top:0;right:0;height:3px;z-index:50;background:transparent}
@@ -351,7 +362,10 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   .closing{padding-top:0;min-height:auto}
   .strip{position:relative;height:auto;grid-template-columns:1fr 1fr;margin:0 calc(-1*var(--pad-x)) 8px}
   .strip img{aspect-ratio:1/1;height:auto}
-  .cap,.dim,.packs{grid-template-columns:minmax(0,1fr)}
+  .cap,.opp{grid-template-columns:minmax(0,1fr)}
+  .opp{gap:36px}
+  .assets{grid-template-columns:1fr 1fr;gap:12px}
+  .ast{padding:16px}
   .hc b{font-size:11px;letter-spacing:-.03em}
   .hc i{width:70%;min-width:0}
   .hmo{font-size:12px}
@@ -445,12 +459,12 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
     </div>
     <div class="col r rv" style="--d:3">
       <p class="lbl mut">03 · Como avançar</p>
-      <p class="big rt">3</p>
-      <p class="lead">frentes, um só funil</p>
-      <p class="lead soft" style="font-weight:400">Dia a dia, Eventos e feiras, Lançamentos: do operador ao distribuidor, com demanda medida.</p>
+      <p class="big rt" data-count="6">6</p>
+      <p class="lead">oportunidades para 2027</p>
+      <p class="lead soft" style="font-weight:400">Três por marca, em três frentes e um só funil: do operador ao distribuidor.</p>
     </div>
   </div>
-  <div class="band rv" style="--d:4"><p class="lead"><span class="rt">Pedimos à Kerry:</span> aprovar o funil e os indicadores · teste de 90 dias com a verba atual · ponto focal comercial para os leads · base mensal + pacotes por calendário.</p></div>
+  <div class="band rv" style="--d:4"><p class="lead"><span class="rt">Pedimos à Kerry:</span> aprovar o funil e os indicadores · teste de 90 dias com a verba atual · ponto focal comercial para os leads · fila de aprovação priorizada.</p></div>
   <div class="notes">Mensagem central: um ano de muitas entregas, com a operação puxada para trade, PDV e eventos; audiência em alta, mas comprada com objetivo de seguidores e sem medição de demanda. A proposta é reconectar conteúdo, eventos e lançamentos num funil que fala com o operador e termina no distribuidor, testando por 90 dias com a verba atual antes de qualquer aumento. Horas: TMetric jan–abr/26 e TGT Hub mai–out/26, cerca de 3.350 h registradas; média de 359 h/mês de fev a out contra escopo base de 200 h. Fontes: Monday quadro BRANDS (276 cards de DVG e Júnior no período; 76 Júnior inclui 2 cards classificados pelo nome); Reportei out/25 e TGT Hub out/26 (seguidores); Reportei out e dez/25 (alcance pago); Google Ads e GA4 via Reportei e Hub (conversões).</div>
 </section>
 
@@ -794,22 +808,66 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="txt">
     <p class="num rv">03.</p>
     <h2 class="rv" style="--d:1">Como<br>avançar</h2>
-    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Estratégia, três frentes de ação, dimensionamento, creators e mídia, e os próximos 90 dias.</p>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Ponto de partida e oportunidades para 2027, três frentes de ação, creators e mídia, e os próximos 90 dias.</p>
   </div>
   <div class="pic"><img src="/review-brands/assets/div03.webp" alt="Drink DaVinci Gourmet ao lado de hambúrguer e batatas" loading="lazy"></div>
   <div class="notes">Terceira parte: recomendações. Tudo o que vem a seguir é proposta, não fato; as premissas que precisam de validação estão indicadas.</div>
 </section>
 
-<!-- 18 VIRADA -->
-<section class="slide red virada" id="s-18" data-theme="red" data-sec="03 · Como avançar" data-title="Do alcance à venda pelo distribuidor">
+<!-- 18 PONTO DE PARTIDA -->
+<section class="slide light" id="s-18" data-theme="light" data-sec="03 · Como avançar" data-title="Ponto de partida para 2027" style="gap:calc(32*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Ponto de partida para 2027</h2>
+    <p class="lead">O ano deixou ativos prontos para escalar a comunicação das duas marcas.</p>
+  </div>
+  <div class="assets">
+    <div class="ast rv" style="--d:1"><p class="lbl rt">Audiência</p><p class="stat" data-count="109" data-suf=" mil">109 mil</p><p class="p soft">seguidores no Instagram, mais 5,5 mil no TikTok desde abril</p></div>
+    <div class="ast rv" style="--d:2"><p class="lbl rt">Conteúdo</p><p class="stat" data-count="7">7</p><p class="p soft">Menus Inspiração com receitas, mais o banco de editorias</p></div>
+    <div class="ast rv" style="--d:3"><p class="lbl rt">Creators</p><p class="stat">3 + 8</p><p class="p soft">parceiros recorrentes e creators de TikTok já mapeados</p></div>
+    <div class="ast rv" style="--d:4"><p class="lbl rt">Vídeo</p><p class="stat" data-count="4">4</p><p class="p soft">produções: BCC, Copa, Caldos e Sopas, Massas e Frangos</p></div>
+    <div class="ast rv" style="--d:5"><p class="lbl rt">Marca</p><p class="stat">2 sites</p><p class="p soft">em revamp (aprovado em out/26), com brandbooks e catálogos</p></div>
+    <div class="ast rv" style="--d:6"><p class="lbl rt">Trade</p><p class="stat" data-count="102">102</p><p class="p soft">demandas de trade, PDV e materiais para redes e distribuidores</p></div>
+    <div class="ast rv" style="--d:7"><p class="lbl rt">Eventos</p><p class="stat" data-count="35">35</p><p class="p soft">demandas de eventos e feiras, do BCC ao Burger Expo</p></div>
+    <div class="ast dk rv" style="--d:8"><p class="lbl rt">Imprensa</p><p class="stat" data-count="3">3</p><p class="p soft">matérias na GiroNews sobre lançamentos e cardápio</p></div>
+  </div>
+  <div class="notes">O que o período deixou construído e pode ser reaproveitado em 2027. Audiência: Instagram DVG 41.463 e Júnior 67.568 seguidores em out/26 (TGT Hub); TikTok DVG 2.540 e Júnior 2.975 em jul/26 (relatório mensal). Conteúdo: Menus Inspiração da Copa, de Massas e Frangos, do Festival do Pistache, de Bebidas (com versão em espanhol), de Chocolate Quente Cremoso, de Caldas e dos lançamentos Júnior; banco de editorias criado em out/26. Creators: Emerson e Guia do Hambúrguer (DVG) e Jhow BBQ (Júnior) como parceiros recorrentes; 8 creators de TikTok mapeados em 2026. Vídeo: semifinalistas e aftermovie do BCC, conteúdo da Copa, produções de Caldos e Sopas e de Massas e Frangos. Marca: revamp dos sites de DVG e Júnior, versão aprovada em out/26; brandbooks; atualização dos catálogos Brands. Trade: 66 demandas de trade, PDV e ativação e 36 de materiais comerciais. Eventos: 35 demandas (BCC, SIC, SP Coffee Festival, Burger Expo, Encontro de Hamburgueiros, stands regionais, Super Mix). Imprensa: GiroNews sobre Calda Pistache, Camarote Brahma e molhos para diferenciar cardápios. Fontes: Monday quadro BRANDS, Drive, relatórios mensais e TGT Hub.</div>
+</section>
+
+<!-- 19 OPORTUNIDADES -->
+<section class="slide dark" id="s-19" data-theme="dark" data-sec="03 · Como avançar" data-title="Oportunidades para 2027" style="gap:calc(32*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Oportunidades para 2027</h2>
+  </div>
+  <div class="opp">
+    <div class="oc rv" style="--d:1">
+      <div class="oh"><img src="/review-brands/assets/logo-dvg.png" alt="DaVinci Gourmet" width="445" height="237"><p class="lbl" style="color:var(--gray)">Cafeterias, bares e coquetelaria</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">01</span>BCC o ano todo</h3><p class="p mut">A etapa nacional teve 34% mais visualizações que em 2024. Baristas finalistas como embaixadores da marca.</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">02</span>Educar sobre concentrados</h3><p class="p mut">Pedida pela Kerry e ainda não executada. Rendimento e custo por dose, abrindo espaço para Bag in Box e NitroJet.</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">03</span>Sabor da estação</h3><p class="p mut">Verão somou 174 mil visualizações e Pistache, 119 mil. Um calendário de sabores puxado pelos lançamentos.</p></div>
+    </div>
+    <div class="oc rv" style="--d:2">
+      <div class="oh"><img src="/review-brands/assets/logo-jr.png" alt="Júnior" width="842" height="396"><p class="lbl" style="color:var(--gray)">Hamburguerias e cozinha profissional</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">04</span>Chapeiros como mídia</h3><p class="p mut">Um vídeo de Jhow BBQ fez 630 mil visualizações, o maior alcance do período. Série fixa com chapeiros, com mídia.</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">05</span>O molho que assina o cardápio</h3><p class="p mut">Na Copa, 144 mil visualizações e 5,1% de engajamento. Casos de hamburguerias reais com o molho da casa.</p></div>
+      <div class="oi"><h3 class="h3"><span class="rt">06</span>Linha Profissional com rota</h3><p class="p mut">21 DMs de intenção de compra em mar/26. Linha Profissional e Molho do Chef com caminho até o distribuidor.</p></div>
+    </div>
+  </div>
+  <p class="p mut rv" style="--d:3;border-top:2px solid var(--red);padding-top:calc(16*var(--px))"><span class="hl" style="font-weight:700">Nas duas marcas:</span> TikTok profissional com creators e anúncios de parceria · imprensa do setor como pauta fixa · eventos como estúdio de conteúdo, com publicação no mesmo dia.</p>
+  <div class="notes">Leitura da TGT a partir dos dados do período; cada oportunidade parte de um sinal com fonte. 01: BCC Etapa Nacional com 34% mais visualizações que a edição 2024 (relatório de março); o BCC já é o principal ativo de comunidade da DVG com baristas. 02: a Kerry pediu uma estratégia para educar sobre xaropes concentrados; a série foi proposta e não foi executada; Bag in Box e NitroJet estão em aprovação. 03: Verão + Carnaval DVG 174 mil e Festival do Pistache 119 mil visualizações no Instagram; Frappé Mocha e DVG Protein estão na fila. 04: Jhow BBQ, churrasco de Dia dos Pais, 629.827 visualizações no TikTok em ago/26, e costelinha com Dijonnese Trufada, 596.064 (com TikTok Ads). 05: Copa do Mundo Júnior, 144 mil visualizações e 5,1% de engajamento; matéria da GiroNews sobre molhos para diferenciar cardápios. 06: intenção de compra por DM medida em mar/26 (21 Júnior, 6 DVG); formulário da Júnior com 37 a 65 envios por mês em out–dez/25; Linha Profissional e Molho do Chef na fila. Nas duas marcas: TikTok aberto em abr/26 com cadência em queda em set–out; três matérias na GiroNews; pedido da Kerry para não perder o timing do conteúdo nos eventos. As frentes a seguir mostram como colocar essas oportunidades em prática.</div>
+</section>
+
+<!-- 20 VIRADA -->
+<section class="slide red virada" id="s-20" data-theme="red" data-sec="03 · Como avançar" data-title="Do alcance à venda pelo distribuidor">
   <p class="lbl rv">03 · Como avançar</p>
   <h2 class="display"><span class="ln-t rv" style="--d:1">Do alcance</span><span class="ln-t rv" style="--d:2">à venda pelo</span><span class="ln-t rv" style="--d:3">distribuidor.</span></h2>
   <div class="band rv" style="--d:5"><p class="lead">Mesma verba, nova direção: falar com quem opera o cardápio e medir a demanda até o distribuidor.</p></div>
   <div class="notes">A ideia central da proposta. Hoje a verba compra audiência ampla; a mudança é de direção, não de tamanho: público profissional (donos, chefs, baristas, bartenders e chapeiros), conteúdo útil para o cardápio e um caminho medido até o distribuidor. Qualquer aumento de investimento só depois do teste de 90 dias.</div>
 </section>
 
-<!-- 19 FUNIL -->
-<section class="slide light" id="s-19" data-theme="light" data-sec="03 · Como avançar" data-title="Um funil para food service">
+<!-- 21 FUNIL -->
+<section class="slide light" id="s-21" data-theme="light" data-sec="03 · Como avançar" data-title="Um funil para food service">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Um funil para food service</h2>
@@ -825,8 +883,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. O funil organiza as três frentes (dia a dia, eventos e lançamentos) com o mesmo objetivo: levar o operador da descoberta ao pedido no distribuidor. Etapa 1 reaproveita a verba atual de mídia, trocando o objetivo de seguidores por alcance em público profissional. Etapa 2 é onde o conteúdo útil (receita, rendimento, custo por porção) e os creators recorrentes já mostraram resultado. Etapa 3 retoma a lógica do Plano Creators DVG 2026 (voucher via QR, formulário, comercial e distribuidor), que ficou no planejamento. Premissas a validar com a Kerry: quem recebe os leads no comercial, como o distribuidor registra o pedido e se é possível acessar dados de sell-in por região.</div>
 </section>
 
-<!-- 20 DIA A DIA -->
-<section class="slide light" id="s-20" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 1 · Dia a dia">
+<!-- 22 DIA A DIA -->
+<section class="slide light" id="s-22" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 1 · Dia a dia">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 1 · Dia a dia</h2>
@@ -847,8 +905,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. P1 = começar já; P2 = no primeiro trimestre. O rito de aprovação responde à fila de 15 itens aguardando aprovação e ao fluxo por e-mail. O calendário por público retoma o que funcionou (conteúdo útil para quem opera o cardápio) e dá destino ao banco de editorias criado em out/26. O kit comercial vivo aproveita o volume de materiais comerciais já produzidos (36 demandas no período) e o transforma em ferramenta de venda. O relatório mensal de uma página volta a dar leitura de resultados, interrompida depois de julho. Premissas a validar: disponibilidade do time de marketing da Kerry para o rito semanal e acesso do comercial ao kit.</div>
 </section>
 
-<!-- 21 EVENTOS -->
-<section class="slide dark" id="s-21" data-theme="dark" data-sec="03 · Como avançar" data-title="Frente 2 · Eventos e feiras">
+<!-- 23 EVENTOS -->
+<section class="slide dark" id="s-23" data-theme="dark" data-sec="03 · Como avançar" data-title="Frente 2 · Eventos e feiras">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 2 · Eventos e feiras</h2>
@@ -866,8 +924,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. Eventos e feiras somaram 35 demandas no período e, junto com trade e PDV, passaram a ser o centro da operação em 2026. A régua antes, durante e depois responde a dois pontos levantados: o pedido da Kerry para não perder o timing do conteúdo nos eventos e a ausência de rotina registrada de follow-up dos contatos. Os exemplos usam eventos que já estão no calendário das marcas (BCC, SP Coffee Festival, Burger Expo, Encontro de Hamburgueiros). Premissas a validar: quem no comercial recebe os leads, se os distribuidores aceitam voucher de degustação e qual meta de contatos faz sentido por porte de evento.</div>
 </section>
 
-<!-- 22 LANCAMENTOS -->
-<section class="slide light" id="s-22" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 3 · Lançamentos">
+<!-- 24 LANCAMENTOS -->
+<section class="slide light" id="s-24" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 3 · Lançamentos">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 3 · Lançamentos</h2>
@@ -886,33 +944,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. Uma régua única para todo lançamento, das duas marcas, ligando marketing, comercial e distribuidores. No período houve vários lançamentos (Calda Pistache, Linha Sensations, Pink Lemonade, novos frascos Júnior, Sweet Chilli e Maionese Verde), mas sem kit de vendas padronizado nem leitura de sell-in. A imprensa do setor já respondeu bem: três matérias na GiroNews. Os itens na fila (Bag in Box, NitroJet, DVG Protein, Frappé Mocha, Molho do Chef, Linha Profissional) podem ser os primeiros a seguir a régua. Premissas a validar: acesso a dados de sell-in por distribuidor e janela real de cada lançamento.</div>
 </section>
 
-<!-- 23 DIMENSIONAR -->
-<section class="slide light" id="s-23" data-theme="light" data-sec="03 · Como avançar" data-title="Dimensionar pelo calendário" style="gap:calc(28*var(--px))">
-  <div class="head rv">
-    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
-    <h2 class="h2">Dimensionar pelo calendário</h2>
-    <p class="lead">Meses de evento e lançamento pedem de 2 a 3 vezes a base. Planejar isso antes dá previsibilidade às duas partes.</p>
-  </div>
-  <div class="dim">
-    <div class="card dk rv" style="--d:1">
-      <p class="lbl rt">Base mensal</p>
-      <p class="big" data-count="200" data-suf=" h">200&nbsp;h</p>
-      <p class="p" style="color:var(--mutd)">Dia a dia: social no Instagram e no TikTok, materiais comerciais, atendimento e relatório mensal.</p>
-      <p class="small" style="color:var(--gray);border-top:1px solid var(--mutl);padding-top:calc(12*var(--px));margin-top:auto">De fev a out, com eventos e lançamentos dentro, a média foi de 359&nbsp;h/mês.</p>
-    </div>
-    <div class="packs">
-      <div class="card rv" style="--d:2"><h3 class="h3">Evento ou feira <span class="rt">· 20–40&nbsp;h</span></h3><p class="p soft">Stand, cobertura e conteúdo no dia. Ref.: Super Mix 22&nbsp;h, Burger Expo 39&nbsp;h, Encontro de Hamburgueiros 40&nbsp;h.</p></div>
-      <div class="card rv" style="--d:3"><h3 class="h3">Lançamento <span class="rt">· 45–75&nbsp;h</span></h3><p class="p soft">Kit, conteúdo e campanha. Ref.: novos frascos Júnior 46&nbsp;h, Festival do Pistache 74&nbsp;h.</p></div>
-      <div class="card rv" style="--d:4"><h3 class="h3">Produção em vídeo <span class="rt">· 30–50&nbsp;h</span></h3><p class="p soft">Festival ou campanha. Ref.: Caldos e Sopas 29&nbsp;h, Massas e Frangos 37&nbsp;h, BCC 36&nbsp;h.</p></div>
-      <div class="card rv" style="--d:5"><h3 class="h3">Projeto de marca <span class="rt">· 25–90&nbsp;h</span></h3><p class="p soft">Catálogo, brandbook, menu. Ref.: brandbook DVG 26&nbsp;h, Menu Inspiração 39&nbsp;h, catálogos 90&nbsp;h.</p></div>
-    </div>
-  </div>
-  <p class="p soft rule rv" style="--d:6"><b>Como funciona:</b> o calendário trimestral define a base e os pacotes; cada pacote é aprovado antes de começar, e a fila do dia a dia não para.</p>
-  <div class="notes">Recomendação. As faixas são referências do histórico, não orçamento. Fontes (horas registradas): TGT Hub mai–out/26 — Stand Karne Keijo Super Mix 22 h; Cobertura Burger Expo 20 h + organização 18,5 h; Encontro de Hamburgueiros 40 h em três edições; Campanha de lançamento dos novos frascos Júnior 45,6 h; Festival do Pistache 50,3 h de produção + 9,5 h + Menu Inspiração Pistache 14,5 h; Produção Caldos e Sopas 29,1 h; Massas e Frangos 37,3 h; BrandBook DVG 26,3 h; Menu Inspiração Bebidas 39,2 h; atualização dos catálogos Brands 89,6 h. TMetric mar/26: produção dos semifinalistas do BCC 22,4 h + aftermovie 13,9 h. A lógica: o escopo base cobre o dia a dia; meses com BCC, convenções, feiras ou lançamentos ganham pacotes definidos no calendário trimestral e aprovados antes de começar. Isso evita fila parada, dá previsibilidade de investimento à Kerry e clareza de prioridade ao time. Premissa a validar: formato de aprovação dos pacotes do lado da Kerry.</div>
-</section>
-
-<!-- 24 CREATORS E MIDIA -->
-<section class="slide dark" id="s-24" data-theme="dark" data-sec="03 · Como avançar" data-title="Creators, UGC e mídia">
+<!-- 25 CREATORS E MIDIA -->
+<section class="slide dark" id="s-25" data-theme="dark" data-sec="03 · Como avançar" data-title="Creators, UGC e mídia">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Creators, UGC e mídia</h2>
@@ -937,8 +970,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação, sem valores definitivos. Base factual: o que performou foram parceiros recorrentes do nicho (Emerson, Guia do Hambúrguer, Jhow BBQ); ações pontuais com perfis grandes ficaram no planejamento; a Kerry indicou faixa de R$ 2,5 a 3,5 mil por creator para a Expo Burger, com perfis menores e nichados. Sobre mídia: hoje a verba de Meta busca seguidores e inclui consumidor final; a proposta é usar a mesma verba para impulsionar o conteúdo dos creators junto a públicos profissionais e medir por QR ou cupom. TikTok: os maiores resultados do período (596 mil e 630 mil visualizações) vieram de conteúdo de creator com mídia ativa. Direitos de uso: não foram localizados contratos com prazo de uso de imagem; recomenda-se padronizar.</div>
 </section>
 
-<!-- 25 ROADMAP -->
-<section class="slide light" id="s-25" data-theme="light" data-sec="03 · Como avançar" data-title="Próximos 90 dias">
+<!-- 26 ROADMAP -->
+<section class="slide light" id="s-26" data-theme="light" data-sec="03 · Como avançar" data-title="Próximos 90 dias">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Próximos 90 dias</h2>
@@ -954,15 +987,15 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
       <p><span>1</span>Aprovar o funil e os indicadores</p>
       <p><span>2</span>Autorizar o teste com a verba atual</p>
       <p><span>3</span>Indicar um ponto focal comercial para os leads</p>
-      <p><span>4</span>Priorizar a fila e adotar base + pacotes</p>
+      <p><span>4</span>Priorizar a fila de aprovação</p>
     </div>
   </div>
   <p class="p soft rule rv" style="--d:5"><b>Como a TGT apoia:</b> na estratégia (funil, calendário e régua de indicadores) e na execução (conteúdo, kits, eventos, creators, mídia e relatórios).</p>
-  <div class="notes">Plano de 90 dias a partir da aprovação, sem aumento de verba: o teste usa a mídia que já é investida (cerca de R$ 8,4 mil por mês nas duas marcas) com nova segmentação e objetivo. Mês 1 cria a base (fila, mensuração, públicos). Mês 2 testa creators âncora com mídia, um evento com régua completa e o kit do próximo lançamento. Mês 3 lê os resultados e decide verba e creators para 2027 com dado. Para começar, precisamos de quatro decisões da Kerry, listadas à direita; a quarta inclui organizar o escopo em base mensal mais pacotes definidos no calendário (slide Dimensionar pelo calendário).</div>
+  <div class="notes">Plano de 90 dias a partir da aprovação, sem aumento de verba: o teste usa a mídia que já é investida (cerca de R$ 8,4 mil por mês nas duas marcas) com nova segmentação e objetivo. Mês 1 cria a base (fila, mensuração, públicos). Mês 2 testa creators âncora com mídia, um evento com régua completa e o kit do próximo lançamento. Mês 3 lê os resultados e decide verba e creators para 2027 com dado. Para começar, precisamos de quatro decisões da Kerry, listadas à direita.</div>
 </section>
 
-<!-- 26 FECHAMENTO -->
-<section class="slide dark closing" id="s-26" data-theme="dark" data-sec="Fechamento" data-title="Juntos, vamos além">
+<!-- 27 FECHAMENTO -->
+<section class="slide dark closing" id="s-27" data-theme="dark" data-sec="Fechamento" data-title="Juntos, vamos além">
   <div class="strip">
     <img src="/review-brands/assets/end-1.webp" alt="Drink vermelho com hortelã preparado com DaVinci Gourmet" loading="lazy">
     <img src="/review-brands/assets/end-2.webp" alt="Hambúrguer em close com molho Júnior" loading="lazy">
@@ -977,8 +1010,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Fechamento. Retomar as quatro decisões do slide anterior e combinar a data da primeira reunião do rito semanal. O repositório completo, com links para cada fonte, fica disponível para consulta (ver anexo).</div>
 </section>
 
-<!-- 27 ANEXO -->
-<section class="slide light" id="s-27" data-theme="light" data-sec="Fechamento" data-title="Fontes e limitações">
+<!-- 28 ANEXO -->
+<section class="slide light" id="s-28" data-theme="light" data-sec="Fechamento" data-title="Fontes e limitações">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>Anexo</p>
     <h2 class="h2">Fontes e limitações</h2>
@@ -1009,7 +1042,7 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
     <button class="hb" data-act="src" title="Fontes deste slide (S)">Fontes</button>
     <button class="hb" data-act="idx" title="Índice (I)">Índice</button>
     <button class="hb ic" data-act="prev" aria-label="Slide anterior"><svg><use href="#i-l"/></svg></button>
-    <span class="hud-n" id="hudN"><b>01</b> / 27</span>
+    <span class="hud-n" id="hudN"><b>01</b> / 28</span>
     <button class="hb ic" data-act="next" aria-label="Próximo slide"><svg><use href="#i-r"/></svg></button>
     <button class="hb ic fs" data-act="fs" aria-label="Tela cheia (F)"><svg><use href="#i-fs"/></svg></button>
   </div>
