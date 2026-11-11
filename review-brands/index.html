@@ -282,6 +282,63 @@ a{color:inherit}
 .oi{border-top:1px solid var(--lined);padding-top:calc(14*var(--px));display:flex;flex-direction:column;gap:calc(6*var(--px))}
 .oi .rt{font-family:var(--fd);font-weight:900;margin-right:.4em}
 
+/* ---------- galleries ---------- */
+.gal{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:calc(24*var(--px))}
+.gi{display:flex;flex-direction:column;gap:calc(12*var(--px));margin:0}
+.gi .ph{overflow:hidden;aspect-ratio:313/340;background:var(--ink2)}
+.light .gi .ph{background:var(--sand2)}
+.gi img,.mat img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.gi:hover img,.mat:hover img{transform:scale(1.045)}
+.gi figcaption,.mat figcaption{display:flex;flex-direction:column;gap:calc(4*var(--px))}
+.gi figcaption b,.mat figcaption b{font-size:var(--t-body);line-height:1.25}
+.gi figcaption span,.mat figcaption span{font-size:var(--t-small);line-height:1.3}
+.dark .gi figcaption span,.dark .mat figcaption span{color:var(--mutd)}
+.light .gi figcaption span{color:var(--body-l)}
+.rule-r{border-top:2px solid var(--red);padding-top:calc(16*var(--px))}
+.mats{display:flex;justify-content:space-between;align-items:flex-start}
+.mat{width:calc(var(--w)*var(--px));display:flex;flex-direction:column;gap:calc(12*var(--px));margin:0}
+.mat .ph{height:calc(380*var(--px));overflow:hidden}
+
+/* ---------- reach per piece ---------- */
+.rend{display:grid;grid-template-columns:calc(1040*var(--px)) minmax(0,1fr);gap:calc(64*var(--px));align-items:start}
+.rrow{display:grid;grid-template-columns:calc(400*var(--px)) minmax(0,1fr);gap:calc(20*var(--px));align-items:center;padding:calc(10*var(--px)) 0;border-bottom:1px solid var(--linel)}
+.rrow .rl{display:flex;flex-direction:column;gap:2px}
+.rrow .rl b{font-size:var(--t-body);line-height:1.2}
+.rrow .rl span{font-size:var(--t-small);color:var(--mutl)}
+.rrow .rbw{display:flex;align-items:center;gap:calc(20*var(--px))}
+.rrow .bar{height:calc(36*var(--px));min-height:14px;width:calc(var(--bw)*var(--px));min-width:4px;flex:none}
+.rrow .val{font-family:var(--fd);font-weight:900;font-size:max(20px,calc(32*var(--px)));white-space:nowrap}
+
+/* ---------- media detail ---------- */
+.tbl.dk th{background:var(--red);color:var(--paper)}
+.tbl.dk td{color:var(--mutd);padding:calc(10*var(--px)) calc(14*var(--px))}
+.tbl.dk th{padding:calc(11*var(--px)) calc(14*var(--px))}
+.tbl.dk tr:nth-child(even) td{background:var(--ink2)}
+.tbl.dk tr:nth-child(odd) td{background:#262223}
+.tbl.dk td:first-child{color:var(--paper);font-weight:700}
+.tbl.dk .z{color:var(--red);font-weight:700}
+.mbox{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(24*var(--px))}
+.mbox>div{background:var(--ink2);border-top:max(3px,calc(4*var(--px))) solid var(--red);padding:calc(16*var(--px)) calc(24*var(--px));display:flex;flex-direction:column;gap:calc(4*var(--px))}
+.mbox .stat{font-size:max(28px,calc(40*var(--px)))}
+
+/* ---------- site ---------- */
+.siteg{display:grid;grid-template-columns:calc(1000*var(--px)) minmax(0,1fr);gap:calc(56*var(--px));align-items:start}
+.gach{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) calc(70*var(--px)) repeat(4,minmax(0,1fr));align-items:end;border-bottom:2px solid var(--ink);height:calc(380*var(--px));min-height:200px;position:relative}
+.gag{display:flex;justify-content:center;align-items:flex-end;gap:calc(6*var(--px));height:100%}
+.gab{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:calc(6*var(--px));height:100%}
+.gab b{font-size:max(11px,calc(20*var(--px)));font-variant-numeric:tabular-nums}
+.gab i{display:block;width:calc(48*var(--px));min-width:12px;height:calc(var(--h)*0.0377*var(--px));transform-origin:bottom;transform:scaleY(0);transition:transform 1.1s var(--ease) calc(var(--d,0)*60ms + 200ms)}
+.in .gab i,html:not(.js) .gab i{transform:none}
+.gab.d b{color:var(--ink)}.gab.d i{background:var(--ink)}
+.gab.j b{color:var(--red)}.gab.j i{background:var(--red)}
+.gagap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:calc(90*var(--px))}
+.gagap span{font-size:max(10px,calc(18*var(--px)));color:var(--mutl);text-align:center;line-height:1.2}
+.gagap::after{content:"";flex:1;border-left:2px dashed var(--gray);margin-top:calc(8*var(--px))}
+.gam{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) calc(70*var(--px)) repeat(4,minmax(0,1fr));text-align:center;font-size:var(--t-small);padding-top:calc(10*var(--px))}
+.srcb{display:flex;height:calc(36*var(--px));min-height:22px}
+.srcb i{display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:700;font-size:max(11px,calc(20*var(--px)));color:var(--paper);overflow:hidden}
+.c-ig{background:#E2A400}
+
 /* ---------- HUD ---------- */
 .progress{position:fixed;left:0;top:0;right:0;height:3px;z-index:50;background:transparent}
 .progress i{display:block;height:100%;width:0;background:var(--red);transition:width .5s var(--ease)}
@@ -362,6 +419,19 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   .closing{padding-top:0;min-height:auto}
   .strip{position:relative;height:auto;grid-template-columns:1fr 1fr;margin:0 calc(-1*var(--pad-x)) 8px}
   .strip img{aspect-ratio:1/1;height:auto}
+  .gal{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .mats{display:grid;grid-template-columns:1fr 1fr;gap:18px 12px}
+  .mat{width:auto}
+  .mat .ph{height:auto;aspect-ratio:var(--ar)}
+  .rend,.siteg,.mbox{grid-template-columns:minmax(0,1fr)}
+  .rrow{grid-template-columns:120px minmax(0,1fr)}
+  .rrow .bar{width:calc(var(--bw)*.22px)}
+  .rrow .val{font-size:18px}
+  .tbl.dk{min-width:900px}
+  .gab b{font-size:10px}
+  .gam{font-size:11px}
+  .gagap span{display:none}
+  .gagap{padding-top:20px}
   .cap,.opp{grid-template-columns:minmax(0,1fr)}
   .opp{gap:36px}
   .assets{grid-template-columns:1fr 1fr;gap:12px}
@@ -388,7 +458,7 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
 /* ---------- motion & print ---------- */
 @media (prefers-reduced-motion:reduce){
   .js .rv{opacity:1;transform:none;transition:none}
-  .bar,.stack,.hc i{transform:none;transition:none}
+  .bar,.stack,.hc i,.gab i{transform:none;transition:none}
   .ln{stroke-dashoffset:0;transition:none}.dot{opacity:1;transition:none}
   .kb{animation:none}.divider .pic img{transform:none;transition:none}
   html{scroll-behavior:auto}
@@ -399,7 +469,7 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   html{scroll-snap-type:none}
   .slide{height:1080px;min-height:0;break-after:page;page-break-after:always}
   .js .rv{opacity:1;transform:none}
-  .bar,.stack,.hc i{transform:none}.ln{stroke-dashoffset:0}.dot{opacity:1}
+  .bar,.stack,.hc i,.gab i{transform:none}.ln{stroke-dashoffset:0}.dot{opacity:1}
   .kb{animation:none}.divider .pic img{transform:none}
   .hud,.progress,.hint,.ovl,.drw{display:none!important}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -490,7 +560,7 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="txt">
     <p class="num rv">01.</p>
     <h2 class="rv" style="--d:1">O que<br>fizemos</h2>
-    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Linha do tempo, frentes, capacidade mobilizada, equipe e processo, e a mudança de rota em 2026.</p>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Linha do tempo, frentes, peças e materiais, capacidade mobilizada, equipe e processo, e a mudança de rota em 2026.</p>
   </div>
   <div class="pic"><img src="/review-brands/assets/div01.webp" alt="Linha de xaropes DaVinci Gourmet com drinks coloridos sobre o balcão" loading="lazy"></div>
   <div class="notes">Primeira parte: o histórico organizado a partir do Monday, do Drive e dos relatórios, sem contar o mesmo material duas vezes.</div>
@@ -548,8 +618,63 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Classificação por frente feita sobre os 276 cards do quadro BRANDS no período (aba Ações e entregas do repositório). Cada card conta uma vez; os posts de social estão nos subitens dos cards mensais, por isso Social e conteúdo aparece como 60 cards, não como número de posts. DVG concentra trade, PDV e eventos (BCC, SIC, convenções KFC, Amiste, Cacau Show, Cheirin Bão). Júnior tem peso maior em social e campanhas. Relatórios e outros soma relatórios (11), vídeo (4), sites (2) e outros (3).</div>
 </section>
 
-<!-- 07 CAPACIDADE -->
-<section class="slide light" id="s-07" data-theme="light" data-sec="01 · O que fizemos" data-title="Capacidade mobilizada">
+<!-- 07 PECAS DVG -->
+<section class="slide dark" id="s-07" data-theme="dark" data-sec="01 · O que fizemos" data-title="DaVinci Gourmet em peças" style="gap:calc(36*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">DaVinci Gourmet em peças</h2>
+    <p class="lead">Cinco campanhas do período e o resultado de cada uma.</p>
+  </div>
+  <div class="gal">
+    <figure class="gi rv" style="--d:1"><div class="ph"><img src="/review-brands/assets/pecas/dvg-bcc.webp" alt="Peça do Barista Craft Championship 2025/2026 da DaVinci Gourmet" loading="lazy"></div><figcaption><b>BCC 2025/26</b><span>Nacional: 75,9 mil visualizações, +34% sobre 2024</span></figcaption></figure>
+    <figure class="gi rv" style="--d:2"><div class="ph"><img src="/review-brands/assets/pecas/dvg-verao.webp" alt="Drinks com xaropes DaVinci Gourmet da campanha de verão" loading="lazy"></div><figcaption><b>Verão + Carnaval</b><span>174 mil visualizações em 10 posts</span></figcaption></figure>
+    <figure class="gi rv" style="--d:3"><div class="ph"><img src="/review-brands/assets/pecas/dvg-copa.webp" alt="Frappé temático da campanha Copa do Mundo da DaVinci Gourmet" loading="lazy"></div><figcaption><b>Copa do Mundo</b><span>81 mil visualizações em 15 posts</span></figcaption></figure>
+    <figure class="gi rv" style="--d:4"><div class="ph"><img src="/review-brands/assets/pecas/dvg-pistache.webp" alt="Mocha de pistache e avelã com a Calda Sabor Pistache" loading="lazy"></div><figcaption><b>Festival do Pistache</b><span>119 mil visualizações (jun–jul/26)</span></figcaption></figure>
+    <figure class="gi rv" style="--d:5"><div class="ph"><img src="/review-brands/assets/pecas/dvg-coldbrew.webp" alt="Cold brew com pistache em post da DaVinci Gourmet" loading="lazy"></div><figcaption><b>Cold Brew com pistache</b><span>Melhor post de julho: 16,5 mil visualizações</span></figcaption></figure>
+  </div>
+  <p class="p mut rule-r rv" style="--d:6">Também no período: Calda Pistache, Linha Sensations, Pink Lemonade, SP Coffee Festival, BCC Global e TikTok desde abr/26.</p>
+  <div class="notes">Peças publicadas no Instagram da DaVinci Gourmet, extraídas dos relatórios mensais da TGT. Resultados: BCC Etapa Nacional 75.886 visualizações e 3.200 interações, 34% acima da edição 2024 (relatório de março); Verão + Carnaval 173.530 visualizações em 10 posts (março); Copa do Mundo 81 mil visualizações em 15 posts, engajamento de 2,0% (maio); Festival do Pistache 119 mil visualizações somando junho e julho; Cold Brew com pistache foi o post de melhor desempenho de julho, com 16.486 visualizações (relatório de julho). Visualizações não estão normalizadas por número de posts nem por investimento em mídia.</div>
+</section>
+
+<!-- 08 PECAS JUNIOR -->
+<section class="slide light" id="s-08" data-theme="light" data-sec="01 · O que fizemos" data-title="Júnior em peças" style="gap:calc(36*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">Júnior em peças</h2>
+    <p class="lead">Cinco campanhas do período e o resultado de cada uma.</p>
+  </div>
+  <div class="gal">
+    <figure class="gi rv" style="--d:1"><div class="ph"><img src="/review-brands/assets/pecas/jr-verao.webp" alt="Molho Baconnaise Júnior com waffle e bacon" loading="lazy"></div><figcaption><b>Verão + Carnaval</b><span>243 mil visualizações em 11 posts</span></figcaption></figure>
+    <figure class="gi rv" style="--d:2"><div class="ph"><img src="/review-brands/assets/pecas/jr-copa.webp" alt="Molhos Júnior em post temático da Copa do Mundo" loading="lazy"></div><figcaption><b>Copa do Mundo</b><span>144 mil visualizações e 5,1% de engajamento</span></figcaption></figure>
+    <figure class="gi rv" style="--d:3"><div class="ph"><img src="/review-brands/assets/pecas/jr-molhos.webp" alt="Lançamento do Molho Sweet Chilli e da Maionese Verde Júnior" loading="lazy"></div><figcaption><b>Sweet Chilli e Maionese Verde</b><span>46,7 mil visualizações (parcial)</span></figcaption></figure>
+    <figure class="gi rv" style="--d:4"><div class="ph"><img src="/review-brands/assets/pecas/jr-massas.webp" alt="Molho de tomate Júnior em post do Festival Massas e Frangos" loading="lazy"></div><figcaption><b>Festival Massas e Frangos</b><span>33,8 mil visualizações</span></figcaption></figure>
+    <figure class="gi rv" style="--d:5"><div class="ph"><img src="/review-brands/assets/pecas/jr-tiktok.webp" alt="Vídeo de TikTok com hambúrguer e Baconnaise Júnior" loading="lazy"></div><figcaption><b>TikTok · burger com Baconnaise</b><span>126 mil visualizações (jun/26)</span></figcaption></figure>
+  </div>
+  <p class="p soft rule-r rv" style="--d:6">Também: novos frascos, Caldos e Sopas, Encontro de Hamburgueiros, Burger Expo e Jhow BBQ com até 630 mil visualizações.</p>
+  <div class="notes">Peças publicadas no Instagram e no TikTok da Júnior, extraídas dos relatórios mensais da TGT. Resultados: Verão + Carnaval 243 mil visualizações em 11 posts (março); Copa do Mundo 144.452 visualizações e 7.399 interações, engajamento de 5,1% (maio); lançamento de Sweet Chilli e Maionese Verde 46.696 visualizações, parcial no fechamento do relatório de julho; Festival Massas e Frangos 33.763 visualizações; vídeo de TikTok com burger de toscana e Baconnaise, 125.803 visualizações em jun/26 (TGT Hub). Vídeos de Jhow BBQ em ago/26: 629.827 e 596.064 visualizações, com TikTok Ads ativo.</div>
+</section>
+
+<!-- 09 MATERIAIS -->
+<section class="slide dark" id="s-09" data-theme="dark" data-sec="01 · O que fizemos" data-title="Materiais que chegam ao balcão" style="gap:calc(32*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">Materiais que chegam ao balcão</h2>
+    <p class="lead">Menus de receitas, displays, convites e estandes: a marca no ponto de venda e nos eventos.</p>
+  </div>
+  <div class="mats">
+    <figure class="mat rv" style="--d:1;--w:214;--ar:0.5622"><div class="ph"><img src="/review-brands/assets/pecas/mat-menu-pistache.webp" alt="Capa do Menu Inspiração Festival do Pistache" loading="lazy"></div><figcaption><b>Menu Inspiração</b><span>Pistache · DVG</span></figcaption></figure>
+    <figure class="mat rv" style="--d:2;--w:214;--ar:0.5622"><div class="ph"><img src="/review-brands/assets/pecas/mat-menu-massas.webp" alt="Capa do Menu Inspiração Massas e Frangos" loading="lazy"></div><figcaption><b>Menu Inspiração</b><span>Massas e Frangos · Júnior</span></figcaption></figure>
+    <figure class="mat rv" style="--d:3;--w:269;--ar:0.7067"><div class="ph"><img src="/review-brands/assets/pecas/mat-display-amiste.webp" alt="Display de mesa Soda Energética DaVinci Gourmet com Amiste Café" loading="lazy"></div><figcaption><b>Display de mesa</b><span>Amiste Café · DVG</span></figcaption></figure>
+    <figure class="mat rv" style="--d:4;--w:273;--ar:0.7200"><div class="ph"><img src="/review-brands/assets/pecas/mat-display-choc.webp" alt="Display A5 Chocolate Cremoso DaVinci Gourmet" loading="lazy"></div><figcaption><b>Display A5</b><span>Chocolate Cremoso · DVG</span></figcaption></figure>
+    <figure class="mat rv" style="--d:5;--w:214;--ar:0.5622"><div class="ph"><img src="/review-brands/assets/pecas/mat-savethedate.webp" alt="Save the date do Encontro de Hamburgueiros Júnior" loading="lazy"></div><figcaption><b>Save the date</b><span>Encontro de Hamburgueiros</span></figcaption></figure>
+    <figure class="mat rv" style="--d:6;--w:253;--ar:0.6667"><div class="ph"><img src="/review-brands/assets/pecas/mat-stand.webp" alt="Projeto de estande Júnior com Maionese Grill, Maionese Verde e Baconnaise" loading="lazy"></div><figcaption><b>Estande</b><span>Super Mix · Júnior</span></figcaption></figure>
+  </div>
+  <p class="p mut rule-r rv" style="--d:7">No período: 7 Menus Inspiração, 102 demandas de trade, PDV e materiais comerciais e 35 de eventos e feiras.</p>
+  <div class="notes">Materiais entregues pela TGT, com arquivos no Drive das marcas. Menu Inspiração Festival do Pistache (jun/26, com versão em espanhol) e Menu Inspiração Massas e Frangos (jul/26): receituários para o operador montar o cardápio do festival. Display de mesa Soda Energética, em co-branding com a rede Amiste Café (abr/26). Display A5 Chocolate Cremoso (ago/26), da atualização dos displays DVG. Save the date do Encontro de Hamburgueiros (mai/26), convite da Kerry a donos de hamburgueria em Campinas e São Paulo. Projeto do estande Júnior para o Super Mix (out/26), em imagem de apresentação. Totais: 66 demandas de trade, PDV e ativação, 36 de materiais comerciais e 35 de eventos e feiras no quadro BRANDS.</div>
+</section>
+
+<!-- 10 CAPACIDADE -->
+<section class="slide light" id="s-10" data-theme="light" data-sec="01 · O que fizemos" data-title="Capacidade mobilizada">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
     <h2 class="h2">Capacidade mobilizada</h2>
@@ -583,8 +708,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Horas de trabalho registradas para DaVinci Gourmet e Júnior. Fontes: TMetric de jan a abr/26 e TGT Hub de mai a out/26 (cliente Kerry Brands). Janeiro: 121 h com a etiqueta DVG/Júnior no TMetric; é um registro parcial, porque parte do trabalho de Verão + Carnaval foi lançada em outro cliente Kerry. Fevereiro: 225 h reconstituídas, porque parte das horas ficou sem projeto no TMetric; a alocação foi refeita cruzando as tarefas com o Monday. Março: 625 h (DVG 411,5; Júnior 213,6), com 16 profissionais; foi o mês do BCC, da Copa e da estreia das edições de TikTok. Abril: cerca de 334 h. Maio a outubro: 403, 485, 413, 238, 257 e 248 h no Hub (inclui poucas horas de pedidos pontuais de outras marcas Kerry, como Vendin). Escopo base de 200 h/mês. Média de fev a out: 359 h/mês, 1,8 vez a base. Tempo integral = 140 h/mês por pessoa. Horas registradas são um piso: parte do trabalho, sobretudo de social media entre ago e set, não foi apontada. Out a dez/25: o registro de horas dessa época não está acessível.</div>
 </section>
 
-<!-- 08 EQUIPE E PROCESSO -->
-<section class="slide dark" id="s-08" data-theme="dark" data-sec="01 · O que fizemos" data-title="Quem fez e como" style="gap:calc(34*var(--px))">
+<!-- 11 EQUIPE E PROCESSO -->
+<section class="slide dark" id="s-11" data-theme="dark" data-sec="01 · O que fizemos" data-title="Quem fez e como" style="gap:calc(34*var(--px))">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
     <h2 class="h2">Quem fez e como</h2>
@@ -617,8 +742,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Equipe: 23 profissionais distintos lançaram horas em Kerry Brands no TGT Hub entre mai e out/26 (17 por mês em mai–jul; 10 a 15 em ago–out); em março, 16 pelo TMetric. Disciplinas pelo cargo no Hub (2.038 h de mai a out): criação e design 1.009 h, social media 591 h, atendimento e estratégia 272 h, produção audiovisual 119 h, direção, tráfego e suporte 47 h. Em março (TMetric): design 192 h, produção audiovisual 145 h, edição 115 h, campanhas 41 h, redes sociais 37 h, site 32 h, planejamento 24 h. Pedidos: cinco interlocutores da Kerry abriram a maior parte das demandas (marketing e trade marketing). Peças: 693 subitens nos 276 cards; 391 marcados como publicados. Prazo: mediana de 4 dias entre a criação do card e a data de entrega, em 58 cards com data preenchida. Coordenação: cerca de 178 h de organização de demandas registradas no Hub em seis meses, perto de 30 h por mês, o custo de receber pedidos por vários canais. Aprovação por e-mail, porque o time da Kerry não acessa o Monday; 15 itens aguardavam aprovação em out/26.</div>
 </section>
 
-<!-- 09 ROTA -->
-<section class="slide light" id="s-09" data-theme="light" data-sec="01 · O que fizemos" data-title="A rota mudou">
+<!-- 12 ROTA -->
+<section class="slide light" id="s-12" data-theme="light" data-sec="01 · O que fizemos" data-title="A rota mudou">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
     <h2 class="h2">A rota mudou</h2>
@@ -648,8 +773,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Participação de cada frente no total de demandas criadas no trimestre (Monday, quadro BRANDS). Conteúdo digital = social, campanhas, lançamentos e creators. Trade, PDV e eventos = trade, PDV e ativação mais eventos e feiras. Out/26 (14 demandas, mês parcial) segue o mesmo padrão: 36% trade e eventos, 29% digital. O volume do 4º tri/25 pode estar subestimado, porque parte do trabalho anterior pode estar registrada em outros quadros. Leitura: a TGT passou a atuar sobretudo como braço de trade, PDV e eventos; o digital continuou, mas com menos campanhas e sem creators novos.</div>
 </section>
 
-<!-- 10 CONTINUIDADE -->
-<section class="slide dark" id="s-10" data-theme="dark" data-sec="01 · O que fizemos" data-title="Continuidade e mudança">
+<!-- 13 CONTINUIDADE -->
+<section class="slide dark" id="s-13" data-theme="dark" data-sec="01 · O que fizemos" data-title="Continuidade e mudança">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
     <h2 class="h2">Continuidade e mudança</h2>
@@ -672,19 +797,19 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Seguiu: cards mensais de social no Monday (DVG de 8 a 24 posts por mês; Júnior de 9 a 21), calendário de festivais e eventos do café, briefings de Emerson e Guia do Hambúrguer (dez/25 a abr/26) e vídeos de Jhow BBQ. Mudou: mix de demandas (slide anterior); perfis de TikTok desde abr/26; pedido da Kerry para comunicação por e-mail; último relatório mensal localizado é o de julho. Ficou no plano: ações de creators do plano 2025 para out–dez/25 sem comprovação de execução; Plano Creators DVG 2026 (voucher via QR, formulário, comercial e distribuidor); série sobre xaropes concentrados proposta; também a proposta Júnior + Pai na Chapa (On Hold) e o pacote de 6 meses com Jhow BBQ (decisão não localizada). Frappé Mocha, DVG Protein e Linha Profissional estão nos grupos de pausados e em aprovação.</div>
 </section>
 
-<!-- 11 DIVIDER 02 -->
-<section class="slide dark divider" id="s-11" data-theme="dark" data-sec="02 · O que aprendemos" data-title="02. O que aprendemos">
+<!-- 14 DIVIDER 02 -->
+<section class="slide dark divider" id="s-14" data-theme="dark" data-sec="02 · O que aprendemos" data-title="02. O que aprendemos">
   <div class="txt">
     <p class="num rv">02.</p>
     <h2 class="rv" style="--d:1">O que<br>aprendemos</h2>
-    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Audiência, campanhas, creators, mídia paga e as lacunas que limitam o impacto.</p>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Audiência, rendimento por canal, campanhas, creators, mídia paga, site e as lacunas que limitam o impacto.</p>
   </div>
   <div class="pic"><img src="/review-brands/assets/div02.webp" alt="Molhos Júnior Alhonese, Chiminese e Dijonese com hambúrgueres" loading="lazy"></div>
   <div class="notes">Segunda parte: resultados comprovados e aprendizados. Só entram números com fonte; onde não há dado confiável, o slide diz isso.</div>
 </section>
 
-<!-- 12 AUDIENCIA -->
-<section class="slide light" id="s-12" data-theme="light" data-sec="02 · O que aprendemos" data-title="A audiência cresceu">
+<!-- 15 AUDIENCIA -->
+<section class="slide light" id="s-15" data-theme="light" data-sec="02 · O que aprendemos" data-title="A audiência cresceu">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
     <h2 class="h2">A audiência cresceu</h2>
@@ -714,8 +839,33 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Seguidores no Instagram ao fim de cada mês. Fontes: Reportei out–dez/25; relatórios mensais da TGT mar–jul/26 (fev e abr calculados a partir do ganho informado no mês seguinte); TGT Hub ago–out/26. Jan/26 sem dado: a linha liga dez/25 a fev/26. Ressalva importante: em out e dez/25, mais de 90% do alcance do Instagram veio de mídia paga, com campanhas de seguidores; o crescimento é real, mas comprado com objetivo de audiência, não de demanda. TikTok (relatório de julho): DVG 2.540 seguidores e 255,8 mil visualizações em 3 meses, engajamento 7,4%; Júnior 2.975 seguidores e 168,8 mil visualizações, abaixo da projeção mínima de 200 mil. Em set/26, 3 posts de TikTok DVG foram cancelados; em out/26, 3 de Júnior não foram iniciados. TikTok orgânico não sincroniza no Hub.</div>
 </section>
 
-<!-- 13 CAMPANHAS -->
-<section class="slide light" id="s-13" data-theme="light" data-sec="02 · O que aprendemos" data-title="O que performou">
+<!-- 16 RENDIMENTO -->
+<section class="slide light" id="s-16" data-theme="light" data-sec="02 · O que aprendemos" data-title="Onde cada peça rende" style="gap:calc(28*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Onde cada peça rende</h2>
+    <p class="lead">No TikTok, um vídeo da Júnior rendeu, em média, 67 vezes um post do Instagram.</p>
+  </div>
+  <div class="rend">
+    <div class="rv" style="--d:1">
+      <p class="lbl mut" style="padding-bottom:calc(6*var(--px))">Visualizações médias por peça · jun–out/26</p>
+      <div class="rrow"><div class="rl"><b>TikTok · Júnior</b><span>5 vídeos</span></div><div class="rbw"><div class="bar" style="--d:0;--bw:470;background:var(--red)"></div><p class="val rt">271 mil</p></div></div>
+      <div class="rrow"><div class="rl"><b>TikTok · DaVinci Gourmet</b><span>11 vídeos</span></div><div class="rbw"><div class="bar" style="--d:1;--bw:59.8;background:var(--ink)"></div><p class="val ">34 mil</p></div></div>
+      <div class="rrow"><div class="rl"><b>Instagram · Júnior</b><span>57 posts</span></div><div class="rbw"><div class="bar" style="--d:2;--bw:7;background:var(--ink)"></div><p class="val ">4,0 mil</p></div></div>
+      <div class="rrow"><div class="rl"><b>Instagram · DaVinci Gourmet</b><span>50 posts</span></div><div class="rbw"><div class="bar" style="--d:3;--bw:3.9;background:var(--ink)"></div><p class="val ">2,3 mil</p></div></div>
+      <div class="rrow"><div class="rl"><b>Facebook · as duas marcas</b><span>110 posts</span></div><div class="rbw"><div class="bar" style="--d:4;--bw:0.2;background:var(--gray)"></div><p class="val mut">0,1 mil</p></div></div>
+    </div>
+    <div class="capst">
+      <div class="rv" style="--d:2"><p class="stat">3–4%</p><p class="p soft">dos seguidores são alcançados por um post orgânico no Instagram: 1,4 mil na DVG e 2,6 mil na Júnior</p></div>
+      <div class="r rv" style="--d:3"><p class="stat rt" data-count="4.5" data-dec="1" data-suf="×">4,5×</p><p class="p soft">mais interações nos Reels da DVG que nos posts estáticos (130 contra 29)</p></div>
+    </div>
+  </div>
+  <p class="small mut rv" style="--d:4">Melhor post orgânico: Cold Brew para balcões (DVG, jul/26), 15,2% de engajamento · TikTok com impulsionamento em parte dos vídeos</p>
+  <div class="notes">Média por peça publicada entre jun e out/26, dados do TGT Hub (sincronização Reportei, tabela de desempenho de posts). Instagram: visualizações médias por post; DVG 50 posts (20 carrosséis, 15 estáticos, 15 reels), Júnior 57 posts (22 carrosséis, 18 estáticos, 17 reels). TikTok: DVG 11 vídeos (379 mil visualizações no total), Júnior 5 vídeos (1,36 milhão), entre eles os dois vídeos de Jhow BBQ com 630 mil e 596 mil e impulsionamento ativo. Facebook: alcance médio por post (163 na DVG e 103 na Júnior). Alcance orgânico por post no Instagram: média de 1.427 na DVG e 2.635 na Júnior, ou 3,4% e 3,9% dos seguidores de out/26. Interações médias por formato na DVG: reels 130, carrosséis 65, estáticos 29; os reels concentram 65% dos salvamentos. Melhor post orgânico do período: reel da DVG de 06/07/2026 sobre cold brew para balcões, 4.082 de alcance, 622 interações, 163 salvamentos e 117 compartilhamentos. Leitura: conteúdo de aplicação para quem opera o balcão gera salvamento, o sinal mais próximo de intenção.</div>
+</section>
+
+<!-- 17 CAMPANHAS -->
+<section class="slide light" id="s-17" data-theme="light" data-sec="02 · O que aprendemos" data-title="O que performou">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
     <h2 class="h2">O que performou</h2>
@@ -744,8 +894,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Fontes: relatórios mensais da TGT de março (Verão + Carnaval, BCC Nacional), maio (Copa), junho e julho (Pistache, Massas e Frangos, novos molhos Sweet Chilli e Maionese Verde, Caldos e Sopas). Número de posts: Verão + Carnaval 10 DVG e 11 Júnior; Copa 15 por marca; Pistache 12; Massas e Frangos 7; novos molhos 5; Caldos e Sopas 3. Visualizações não estão normalizadas por número de posts nem por duração. TikTok: TGT Hub (tt_social_desempenho) — churrasco de Dia dos Pais 629.827 e costelinha com Dijonnese Trufada 596.064 visualizações, ambos em ago/26 com TikTok Ads ativo; Brazilian Latte (DVG) 130.736 em jul/26. Imprensa: três matérias na GiroNews (Calda Pistache, Camarote Brahma, molhos para diferenciar cardápios). Intenção de compra por DM só foi medida em mar/26: 6 DVG e 21 Júnior.</div>
 </section>
 
-<!-- 14 CREATORS -->
-<section class="slide dark" id="s-14" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Creators: plano × real">
+<!-- 18 CREATORS -->
+<section class="slide dark" id="s-18" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Creators: plano × real">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
     <h2 class="h2">Creators: plano × real</h2>
@@ -763,8 +913,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Plano 2025 (arquivo de proposta): DVG 13 ações, R$ 10.700 com valor definido e 4 aguardando orçamento; Júnior 14 ações, R$ 14.400 e 1 aguardando. A ação Dia dos Namorados DVG + Júnior (R$ 2.000) aparece nas duas abas e foi contada uma vez, por isso o total é R$ 23,1 mil. Acompanhamento no Drive: execução com trocas frequentes de creator e de valor. No período analisado (out–dez/25), 2 das 8 ações têm registro de execução: Emerson no Dia Internacional do Café e chamada BCC (DVG) e Lucas Melga no Dia do Macarrão (Júnior); as outras 6 não têm comprovação no Monday, no Drive ou no Hub. Valores planejados não comprovam pagamento. 2026: 8 creators de TikTok mapeados (valores de R$ 1.000 a R$ 215.000 por pacote), mapeamento para a Expo Burger e Plano Creators DVG 2026 (abr/26).</div>
 </section>
 
-<!-- 15 MIDIA -->
-<section class="slide light" id="s-15" data-theme="light" data-sec="02 · O que aprendemos" data-title="Mídia paga hoje">
+<!-- 19 MIDIA -->
+<section class="slide light" id="s-19" data-theme="light" data-sec="02 · O que aprendemos" data-title="Mídia paga hoje">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
     <h2 class="h2">Mídia paga hoje</h2>
@@ -786,8 +936,76 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Fontes: Reportei out–dez/25 e TGT Hub ago–out/26 (Meta Ads, Google Ads, GA4 e mídia diária). Meta Ads DVG: R$ 3.000,68 (ago), R$ 2.749,89 (set), R$ 3.035,71 (out); em out–dez/25, R$ 1.998 a R$ 3.053. Meta Ads Júnior: R$ 1.953,82, R$ 1.926,93 e R$ 2.000,46 em ago–out/26; em out–dez/25 o relatório mostra os valores em “$”. Campanhas Meta com objetivo de seguidores e engajamento (lookalike SP + Sul), incluindo segmentação de consumidor final. Google Ads: R$ 2.994 (DVG) e R$ 2.968 (Júnior) em três meses, 0 conversões. TikTok Ads: R$ 1.879, R$ 2.000 e R$ 606 em ago, set e out/26, nas duas marcas. A média de R$ 8,4 mil/mês é uma soma aproximada desses três canais. Alcance pago: DVG 93% e 97%, Júnior 93% e 95% em out e dez/25.</div>
 </section>
 
-<!-- 16 LACUNAS -->
-<section class="slide dark" id="s-16" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Lacunas a fechar">
+<!-- 20 MIDIA DETALHE -->
+<section class="slide dark" id="s-20" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Mídia paga em detalhe" style="gap:calc(20*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Mídia paga em detalhe</h2>
+  </div>
+  <p class="lbl rv" style="color:var(--gray)">Ago–out/26 · R$ 25,1 mil em três canais</p>
+  <div class="scrollx rv" style="--d:1">
+    <table class="tbl dk" style="font-size:max(14px,calc(22*var(--px)))">
+      <tr><th style="width:12%">Canal</th><th style="width:9%">Investimento</th><th style="width:21%">Objetivo</th><th style="width:9%">Impressões</th><th style="width:12%">Cliques · CTR</th><th style="width:15%">Custo</th><th style="width:22%">Resultado</th></tr>
+      <tr><td>Meta · DVG</td><td>R$ 8,8 mil</td><td>77% seguidores · 23% engajamento</td><td>1,15 mi</td><td>35,4 mil · 3,1%</td><td>CPM R$ 7,67 · CPC R$ 0,25</td><td>31,8 mil visitas ao perfil · 76 ao site</td></tr>
+      <tr><td>Meta · Júnior</td><td>R$ 5,9 mil</td><td>51% consumidor final · 49% food service</td><td>1,22 mi</td><td>27,1 mil · 2,2%</td><td>CPM R$ 4,82 · CPC R$ 0,22</td><td>24,9 mil visitas ao perfil · 315 ao site</td></tr>
+      <tr><td>Google · DVG</td><td>R$ 3,0 mil</td><td>Tráfego para o site</td><td>278 mil</td><td>12,1 mil · 4,4%</td><td>CPC R$ 0,25</td><td class="z">0 conversões</td></tr>
+      <tr><td>Google · Júnior</td><td>R$ 3,0 mil</td><td>Tráfego para o site</td><td>218 mil</td><td>18,9 mil · 8,6%</td><td>CPC R$ 0,16</td><td class="z">0 conversões</td></tr>
+      <tr><td>TikTok · DVG</td><td>R$ 2,3 mil</td><td>Engajamento e seguidores</td><td>252 mil</td><td>—</td><td>CPM R$ 9,05</td><td>Sem leitura de resultado</td></tr>
+      <tr><td>TikTok · Júnior</td><td>R$ 2,2 mil</td><td>Engajamento e seguidores</td><td>713 mil</td><td>—</td><td>CPM R$ 3,10</td><td>Sem leitura de resultado</td></tr>
+    </table>
+  </div>
+  <div class="mbox">
+    <div class="rv" style="--d:2"><p class="stat">56,6 mil × 391</p><p class="small mut">visitas ao perfil contra visitas ao site vindas de Meta</p></div>
+    <div class="rv" style="--d:3"><p class="stat">31 mil cliques</p><p class="small mut">do Google no site, sem nenhuma conversão configurada</p></div>
+    <div class="rv" style="--d:4"><p class="stat">R$ 3,37 · R$ 1,13</p><p class="small mut">por seguidor líquido conquistado no Instagram (DVG · Júnior)</p></div>
+  </div>
+  <div class="notes">Fontes: TGT Hub, sincronização Reportei e mídia diária (tt_pago_dia), ago a out/26. Meta Ads DVG: R$ 8.786 (R$ 3.000,68, 2.749,89 e 3.035,71), campanhas "Seguidores" (R$ 6.754, 77%) e "Engajamento Geral" (R$ 2.032, 23%); 1.145.149 impressões, 35.367 cliques, CTR 3,1%, CPM R$ 7,67, CPC R$ 0,25; 31.756 visitas ao perfil, 76 visualizações de página de destino, 27 conversas iniciadas. Meta Ads Júnior: R$ 5.881; campanhas para consumidor final (R$ 3.007, 51%) e food service (R$ 2.874, 49%); 1.219.538 impressões, 27.108 cliques, CTR 2,2%, CPM R$ 4,82, CPC R$ 0,22; 24.889 visitas ao perfil, 315 visualizações de página, 74 conversas. Google Ads (conta KERRY BRASIL, separada por campanha): DVG R$ 2.994, 277.894 impressões, 12.128 cliques; Júnior R$ 2.968, 218.202 impressões, 18.862 cliques; 0 conversões nas duas; a mesma conta tem campanha Siber, fora deste total. TikTok Ads: DVG R$ 2.279 e Júnior R$ 2.206, campanhas de engajamento e de ganho de seguidores; a integração não traz resultados. Custo por seguidor líquido = investimento Meta ÷ ganho líquido de seguidores no Instagram em ago–out (DVG +2.604; Júnior +5.222), inclui crescimento orgânico. Leitura: a verba compra audiência e visitas ao perfil; o caminho até o site e a demanda não é medido.</div>
+</section>
+
+<!-- 21 SITE GA4 -->
+<section class="slide light" id="s-21" data-theme="light" data-sec="02 · O que aprendemos" data-title="Site e Google Analytics" style="gap:calc(28*var(--px))">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Site e Google Analytics</h2>
+  </div>
+  <div class="siteg">
+    <div class="rv" style="--d:1;display:flex;flex-direction:column;gap:calc(14*var(--px))">
+      <div class="legend"><span><i class="sw c-dvg"></i>DaVinci Gourmet</span><span><i class="sw c-jr"></i>Júnior</span><span class="mut">· usuários por mês, em mil</span></div>
+      <div class="gach" role="img" aria-label="Usuários do site por mês. DaVinci Gourmet: 3,2 mil em out/25, 2,7 mil em nov, 2,1 mil em dez, 1,1 mil em jul/26, 3,1 mil em ago, 2,3 mil em set e 2,2 mil em out. Júnior: 5,6, 5,1, 4,2, 5,0, 6,6, 8,5 e 6,0 mil. Jan a jun/26 sem dado.">
+      <div class="gag"><div class="gab d"><b>3,2</b><i style="--h:3161;--d:0"></i></div><div class="gab j"><b>5,6</b><i style="--h:5614;--d:0"></i></div></div>
+      <div class="gag"><div class="gab d"><b>2,7</b><i style="--h:2692;--d:1"></i></div><div class="gab j"><b>5,1</b><i style="--h:5101;--d:1"></i></div></div>
+      <div class="gag"><div class="gab d"><b>2,1</b><i style="--h:2138;--d:2"></i></div><div class="gab j"><b>4,2</b><i style="--h:4220;--d:2"></i></div></div>
+      <div class="gagap"><span>jan–jun sem dado</span></div>
+      <div class="gag"><div class="gab d"><b>1,1</b><i style="--h:1106;--d:3"></i></div><div class="gab j"><b>5,0</b><i style="--h:4967;--d:3"></i></div></div>
+      <div class="gag"><div class="gab d"><b>3,1</b><i style="--h:3106;--d:4"></i></div><div class="gab j"><b>6,6</b><i style="--h:6619;--d:4"></i></div></div>
+      <div class="gag"><div class="gab d"><b>2,3</b><i style="--h:2279;--d:5"></i></div><div class="gab j"><b>8,5</b><i style="--h:8480;--d:5"></i></div></div>
+      <div class="gag"><div class="gab d"><b>2,2</b><i style="--h:2242;--d:6"></i></div><div class="gab j"><b>6,0</b><i style="--h:5964;--d:6"></i></div></div>
+      </div>
+      <div class="gam" aria-hidden="true"><span>out/25</span><span>nov</span><span>dez</span><span></span><span>jul/26</span><span>ago</span><span>set</span><span>out</span></div>
+      <p class="small soft">Sessões engajadas: <b>56–64%</b> na Júnior e <b>39–45%</b> na DVG.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:calc(18*var(--px))">
+      <div class="rv" style="--d:2;display:flex;flex-direction:column;gap:calc(8*var(--px));border-top:2px solid var(--red);padding-top:calc(16*var(--px))">
+        <p class="stat rt">~50/mês</p>
+        <p class="p soft">contatos pelo site da Júnior (eventos-chave: 39 a 67 por mês). A DVG ainda não mede nenhum.</p>
+      </div>
+      <div class="rv" style="--d:3;display:flex;flex-direction:column;gap:calc(10*var(--px));border-top:2px solid var(--mutl);padding-top:calc(16*var(--px))">
+        <p class="lbl mut">Origem das visitas · nov–dez/25</p>
+        <p class="p" style="font-weight:700">DaVinci Gourmet</p>
+        <div class="srcb"><i class="c-dvg" style="width:50%">50%</i><i class="c-jr" style="width:30%">30%</i><i class="c-sl" style="width:16%">16%</i><i class="c-amb" style="width:4%"></i></div>
+        <p class="p" style="font-weight:700">Júnior</p>
+        <div class="srcb"><i class="c-dvg" style="width:35%">35%</i><i class="c-jr" style="width:24%">24%</i><i class="c-sl" style="width:35%">35%</i><i class="c-ig" style="width:1%"></i><i class="c-amb" style="width:5%"></i></div>
+        <p class="small soft"><span style="color:var(--ink)">■</span> Direto · <span class="rt">■</span> Google pago · <span style="color:var(--slate)">■</span> Google orgânico · <span style="color:#E2A400">■</span> Instagram · <span style="color:var(--gray)">■</span> outros</p>
+        <p class="p" style="font-weight:700">O Instagram traz cerca de 1% das visitas ao site.</p>
+      </div>
+    </div>
+  </div>
+  <p class="small mut rv" style="--d:4">12–20% dos usuários vêm de fora do Brasil (Reino Unido, China, EUA), padrão de tráfego automatizado a filtrar · Fontes: Reportei out–dez/25 e TGT Hub jul–out/26</p>
+  <div class="notes">Google Analytics 4 das duas marcas. Usuários: DVG 3.161, 2.692 e 2.138 em out, nov e dez/25 (Reportei); 1.106 em jul/26 e 3.106, 2.279 e 2.242 em ago, set e out/26 (TGT Hub); Júnior 5.614, 5.101 e 4.220; 4.967; 6.619, 8.480 e 5.964. Jan a jun/26 sem dado de GA4 consolidado. Sessões engajadas: Júnior 56,0% e 57,1% (nov e dez/25), 62,4%, 64,2% e 63,4% (ago a out/26); DVG 40,6% e 39,3%, 43,1%, 42,5% e 45,2%. Eventos-chave da Júnior (envios de formulário): 54, 67 e 39 em out a dez/25; 50, 48 e 63 em ago a out/26; DVG sem evento-chave configurado. Origem das sessões, soma de nov e dez/25: DVG 5.531 sessões, direto 50%, Google pago 30%, Google orgânico 16%, outros 5% (Instagram abaixo de 1%); Júnior 11.041 sessões, direto 35%, Google orgânico 35%, Google pago 24%, Instagram 1,2%, outros 5%. Usuários fora do Brasil em nov/25: 20% na DVG e 12% na Júnior, com cidades como Earley (Reino Unido) e Lanzhou (China), típico de tráfego automatizado. Leitura: o site recebe busca e tráfego pago, e a Júnior já gera contatos; falta ligar os contatos ao comercial e medir na DVG.</div>
+</section>
+
+<!-- 22 LACUNAS -->
+<section class="slide dark" id="s-22" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Lacunas a fechar">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
     <h2 class="h2">Lacunas a fechar</h2>
@@ -803,8 +1021,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">01: grupos On Hold e Em Aprovação do quadro BRANDS (DVG Protein, KV Frappé Mocha, Linha Profissional Júnior, revamp molhos de salada, Flavour Genius 2026, display de garrafas; em aprovação em out/26: Bag in Box, NitroJet, vídeo Linha Sensations, mockups Júnior). 02: relatórios de ago, set e out/26 não localizados no Monday nem no Drive; cards de TikTok de set (DVG, 3 cancelados) e out/26 (Júnior, 3 não iniciados). 03: Reportei e TGT Hub; formulário Júnior com 51, 65 e 37 envios em out, nov e dez/25. 04 e 05: comentários da Kerry no Monday (pedido para não perder o timing dos eventos; estratégia para educar sobre xaropes concentrados). 06: pedido de comunicação por e-mail porque o time da Kerry não acessa o Monday; recomendação de padronizar acessos às contas das marcas (perfis nominais e cofre de senhas).</div>
 </section>
 
-<!-- 17 DIVIDER 03 -->
-<section class="slide dark divider" id="s-17" data-theme="dark" data-sec="03 · Como avançar" data-title="03. Como avançar">
+<!-- 23 DIVIDER 03 -->
+<section class="slide dark divider" id="s-23" data-theme="dark" data-sec="03 · Como avançar" data-title="03. Como avançar">
   <div class="txt">
     <p class="num rv">03.</p>
     <h2 class="rv" style="--d:1">Como<br>avançar</h2>
@@ -814,8 +1032,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Terceira parte: recomendações. Tudo o que vem a seguir é proposta, não fato; as premissas que precisam de validação estão indicadas.</div>
 </section>
 
-<!-- 18 PONTO DE PARTIDA -->
-<section class="slide light" id="s-18" data-theme="light" data-sec="03 · Como avançar" data-title="Ponto de partida para 2027" style="gap:calc(32*var(--px))">
+<!-- 24 PONTO DE PARTIDA -->
+<section class="slide light" id="s-24" data-theme="light" data-sec="03 · Como avançar" data-title="Ponto de partida para 2027" style="gap:calc(32*var(--px))">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Ponto de partida para 2027</h2>
@@ -834,8 +1052,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">O que o período deixou construído e pode ser reaproveitado em 2027. Audiência: Instagram DVG 41.463 e Júnior 67.568 seguidores em out/26 (TGT Hub); TikTok DVG 2.540 e Júnior 2.975 em jul/26 (relatório mensal). Conteúdo: Menus Inspiração da Copa, de Massas e Frangos, do Festival do Pistache, de Bebidas (com versão em espanhol), de Chocolate Quente Cremoso, de Caldas e dos lançamentos Júnior; banco de editorias criado em out/26. Creators: Emerson e Guia do Hambúrguer (DVG) e Jhow BBQ (Júnior) como parceiros recorrentes; 8 creators de TikTok mapeados em 2026. Vídeo: semifinalistas e aftermovie do BCC, conteúdo da Copa, produções de Caldos e Sopas e de Massas e Frangos. Marca: revamp dos sites de DVG e Júnior, versão aprovada em out/26; brandbooks; atualização dos catálogos Brands. Trade: 66 demandas de trade, PDV e ativação e 36 de materiais comerciais. Eventos: 35 demandas (BCC, SIC, SP Coffee Festival, Burger Expo, Encontro de Hamburgueiros, stands regionais, Super Mix). Imprensa: GiroNews sobre Calda Pistache, Camarote Brahma e molhos para diferenciar cardápios. Fontes: Monday quadro BRANDS, Drive, relatórios mensais e TGT Hub.</div>
 </section>
 
-<!-- 19 OPORTUNIDADES -->
-<section class="slide dark" id="s-19" data-theme="dark" data-sec="03 · Como avançar" data-title="Oportunidades para 2027" style="gap:calc(32*var(--px))">
+<!-- 25 OPORTUNIDADES -->
+<section class="slide dark" id="s-25" data-theme="dark" data-sec="03 · Como avançar" data-title="Oportunidades para 2027" style="gap:calc(32*var(--px))">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Oportunidades para 2027</h2>
@@ -858,16 +1076,16 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Leitura da TGT a partir dos dados do período; cada oportunidade parte de um sinal com fonte. 01: BCC Etapa Nacional com 34% mais visualizações que a edição 2024 (relatório de março); o BCC já é o principal ativo de comunidade da DVG com baristas. 02: a Kerry pediu uma estratégia para educar sobre xaropes concentrados; a série foi proposta e não foi executada; Bag in Box e NitroJet estão em aprovação. 03: Verão + Carnaval DVG 174 mil e Festival do Pistache 119 mil visualizações no Instagram; Frappé Mocha e DVG Protein estão na fila. 04: Jhow BBQ, churrasco de Dia dos Pais, 629.827 visualizações no TikTok em ago/26, e costelinha com Dijonnese Trufada, 596.064 (com TikTok Ads). 05: Copa do Mundo Júnior, 144 mil visualizações e 5,1% de engajamento; matéria da GiroNews sobre molhos para diferenciar cardápios. 06: intenção de compra por DM medida em mar/26 (21 Júnior, 6 DVG); formulário da Júnior com 37 a 65 envios por mês em out–dez/25; Linha Profissional e Molho do Chef na fila. Nas duas marcas: TikTok aberto em abr/26 com cadência em queda em set–out; três matérias na GiroNews; pedido da Kerry para não perder o timing do conteúdo nos eventos. As frentes a seguir mostram como colocar essas oportunidades em prática.</div>
 </section>
 
-<!-- 20 VIRADA -->
-<section class="slide red virada" id="s-20" data-theme="red" data-sec="03 · Como avançar" data-title="Do alcance à venda pelo distribuidor">
+<!-- 26 VIRADA -->
+<section class="slide red virada" id="s-26" data-theme="red" data-sec="03 · Como avançar" data-title="Do alcance à venda pelo distribuidor">
   <p class="lbl rv">03 · Como avançar</p>
   <h2 class="display"><span class="ln-t rv" style="--d:1">Do alcance</span><span class="ln-t rv" style="--d:2">à venda pelo</span><span class="ln-t rv" style="--d:3">distribuidor.</span></h2>
   <div class="band rv" style="--d:5"><p class="lead">Mesma verba, nova direção: falar com quem opera o cardápio e medir a demanda até o distribuidor.</p></div>
   <div class="notes">A ideia central da proposta. Hoje a verba compra audiência ampla; a mudança é de direção, não de tamanho: público profissional (donos, chefs, baristas, bartenders e chapeiros), conteúdo útil para o cardápio e um caminho medido até o distribuidor. Qualquer aumento de investimento só depois do teste de 90 dias.</div>
 </section>
 
-<!-- 21 FUNIL -->
-<section class="slide light" id="s-21" data-theme="light" data-sec="03 · Como avançar" data-title="Um funil para food service">
+<!-- 27 FUNIL -->
+<section class="slide light" id="s-27" data-theme="light" data-sec="03 · Como avançar" data-title="Um funil para food service">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Um funil para food service</h2>
@@ -883,8 +1101,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. O funil organiza as três frentes (dia a dia, eventos e lançamentos) com o mesmo objetivo: levar o operador da descoberta ao pedido no distribuidor. Etapa 1 reaproveita a verba atual de mídia, trocando o objetivo de seguidores por alcance em público profissional. Etapa 2 é onde o conteúdo útil (receita, rendimento, custo por porção) e os creators recorrentes já mostraram resultado. Etapa 3 retoma a lógica do Plano Creators DVG 2026 (voucher via QR, formulário, comercial e distribuidor), que ficou no planejamento. Premissas a validar com a Kerry: quem recebe os leads no comercial, como o distribuidor registra o pedido e se é possível acessar dados de sell-in por região.</div>
 </section>
 
-<!-- 22 DIA A DIA -->
-<section class="slide light" id="s-22" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 1 · Dia a dia">
+<!-- 28 DIA A DIA -->
+<section class="slide light" id="s-28" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 1 · Dia a dia">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 1 · Dia a dia</h2>
@@ -905,8 +1123,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. P1 = começar já; P2 = no primeiro trimestre. O rito de aprovação responde à fila de 15 itens aguardando aprovação e ao fluxo por e-mail. O calendário por público retoma o que funcionou (conteúdo útil para quem opera o cardápio) e dá destino ao banco de editorias criado em out/26. O kit comercial vivo aproveita o volume de materiais comerciais já produzidos (36 demandas no período) e o transforma em ferramenta de venda. O relatório mensal de uma página volta a dar leitura de resultados, interrompida depois de julho. Premissas a validar: disponibilidade do time de marketing da Kerry para o rito semanal e acesso do comercial ao kit.</div>
 </section>
 
-<!-- 23 EVENTOS -->
-<section class="slide dark" id="s-23" data-theme="dark" data-sec="03 · Como avançar" data-title="Frente 2 · Eventos e feiras">
+<!-- 29 EVENTOS -->
+<section class="slide dark" id="s-29" data-theme="dark" data-sec="03 · Como avançar" data-title="Frente 2 · Eventos e feiras">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 2 · Eventos e feiras</h2>
@@ -924,8 +1142,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. Eventos e feiras somaram 35 demandas no período e, junto com trade e PDV, passaram a ser o centro da operação em 2026. A régua antes, durante e depois responde a dois pontos levantados: o pedido da Kerry para não perder o timing do conteúdo nos eventos e a ausência de rotina registrada de follow-up dos contatos. Os exemplos usam eventos que já estão no calendário das marcas (BCC, SP Coffee Festival, Burger Expo, Encontro de Hamburgueiros). Premissas a validar: quem no comercial recebe os leads, se os distribuidores aceitam voucher de degustação e qual meta de contatos faz sentido por porte de evento.</div>
 </section>
 
-<!-- 24 LANCAMENTOS -->
-<section class="slide light" id="s-24" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 3 · Lançamentos">
+<!-- 30 LANCAMENTOS -->
+<section class="slide light" id="s-30" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 3 · Lançamentos">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Frente 3 · Lançamentos</h2>
@@ -944,8 +1162,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação. Uma régua única para todo lançamento, das duas marcas, ligando marketing, comercial e distribuidores. No período houve vários lançamentos (Calda Pistache, Linha Sensations, Pink Lemonade, novos frascos Júnior, Sweet Chilli e Maionese Verde), mas sem kit de vendas padronizado nem leitura de sell-in. A imprensa do setor já respondeu bem: três matérias na GiroNews. Os itens na fila (Bag in Box, NitroJet, DVG Protein, Frappé Mocha, Molho do Chef, Linha Profissional) podem ser os primeiros a seguir a régua. Premissas a validar: acesso a dados de sell-in por distribuidor e janela real de cada lançamento.</div>
 </section>
 
-<!-- 25 CREATORS E MIDIA -->
-<section class="slide dark" id="s-25" data-theme="dark" data-sec="03 · Como avançar" data-title="Creators, UGC e mídia">
+<!-- 31 CREATORS E MIDIA -->
+<section class="slide dark" id="s-31" data-theme="dark" data-sec="03 · Como avançar" data-title="Creators, UGC e mídia">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Creators, UGC e mídia</h2>
@@ -970,8 +1188,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Recomendação, sem valores definitivos. Base factual: o que performou foram parceiros recorrentes do nicho (Emerson, Guia do Hambúrguer, Jhow BBQ); ações pontuais com perfis grandes ficaram no planejamento; a Kerry indicou faixa de R$ 2,5 a 3,5 mil por creator para a Expo Burger, com perfis menores e nichados. Sobre mídia: hoje a verba de Meta busca seguidores e inclui consumidor final; a proposta é usar a mesma verba para impulsionar o conteúdo dos creators junto a públicos profissionais e medir por QR ou cupom. TikTok: os maiores resultados do período (596 mil e 630 mil visualizações) vieram de conteúdo de creator com mídia ativa. Direitos de uso: não foram localizados contratos com prazo de uso de imagem; recomenda-se padronizar.</div>
 </section>
 
-<!-- 26 ROADMAP -->
-<section class="slide light" id="s-26" data-theme="light" data-sec="03 · Como avançar" data-title="Próximos 90 dias">
+<!-- 32 ROADMAP -->
+<section class="slide light" id="s-32" data-theme="light" data-sec="03 · Como avançar" data-title="Próximos 90 dias">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
     <h2 class="h2">Próximos 90 dias</h2>
@@ -994,8 +1212,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Plano de 90 dias a partir da aprovação, sem aumento de verba: o teste usa a mídia que já é investida (cerca de R$ 8,4 mil por mês nas duas marcas) com nova segmentação e objetivo. Mês 1 cria a base (fila, mensuração, públicos). Mês 2 testa creators âncora com mídia, um evento com régua completa e o kit do próximo lançamento. Mês 3 lê os resultados e decide verba e creators para 2027 com dado. Para começar, precisamos de quatro decisões da Kerry, listadas à direita.</div>
 </section>
 
-<!-- 27 FECHAMENTO -->
-<section class="slide dark closing" id="s-27" data-theme="dark" data-sec="Fechamento" data-title="Juntos, vamos além">
+<!-- 33 FECHAMENTO -->
+<section class="slide dark closing" id="s-33" data-theme="dark" data-sec="Fechamento" data-title="Juntos, vamos além">
   <div class="strip">
     <img src="/review-brands/assets/end-1.webp" alt="Drink vermelho com hortelã preparado com DaVinci Gourmet" loading="lazy">
     <img src="/review-brands/assets/end-2.webp" alt="Hambúrguer em close com molho Júnior" loading="lazy">
@@ -1010,8 +1228,8 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
   <div class="notes">Fechamento. Retomar as quatro decisões do slide anterior e combinar a data da primeira reunião do rito semanal. O repositório completo, com links para cada fonte, fica disponível para consulta (ver anexo).</div>
 </section>
 
-<!-- 28 ANEXO -->
-<section class="slide light" id="s-28" data-theme="light" data-sec="Fechamento" data-title="Fontes e limitações">
+<!-- 34 ANEXO -->
+<section class="slide light" id="s-34" data-theme="light" data-sec="Fechamento" data-title="Fontes e limitações">
   <div class="head rv">
     <p class="eyebrow"><svg><use href="#arw"/></svg>Anexo</p>
     <h2 class="h2">Fontes e limitações</h2>
@@ -1042,7 +1260,7 @@ body[data-theme=red] .hud-n b{color:var(--paper2)}
     <button class="hb" data-act="src" title="Fontes deste slide (S)">Fontes</button>
     <button class="hb" data-act="idx" title="Índice (I)">Índice</button>
     <button class="hb ic" data-act="prev" aria-label="Slide anterior"><svg><use href="#i-l"/></svg></button>
-    <span class="hud-n" id="hudN"><b>01</b> / 28</span>
+    <span class="hud-n" id="hudN"><b>01</b> / 34</span>
     <button class="hb ic" data-act="next" aria-label="Próximo slide"><svg><use href="#i-r"/></svg></button>
     <button class="hb ic fs" data-act="fs" aria-label="Tela cheia (F)"><svg><use href="#i-fs"/></svg></button>
   </div>
