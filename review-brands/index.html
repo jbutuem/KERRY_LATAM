@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Review Brands · DaVinci Gourmet e Júnior · TGT Studio</title>
+<meta name="description" content="Diagnóstico e plano de ação para DaVinci Gourmet e Júnior Food Service, out/2025 a out/2026. TGT Studio para Kerry Food Service LATAM.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#231F20">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kerry-latam.vercel.app/review-brands">
+<meta property="og:title" content="Review Brands · DaVinci Gourmet e Júnior">
+<meta property="og:description" content="O que fizemos, o que aprendemos e como avançar. TGT Studio para Kerry Food Service LATAM.">
+<meta property="og:image" content="https://kerry-latam.vercel.app/review-brands/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/review-brands/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Montserrat:wght@400..700&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --ink:#231F20;--ink2:#2E2A2B;--lined:#3F3A3B;--sand:#E2DBCE;--sand2:#F1ECE4;--sand3:#E9E3D8;--paper:#F4F0E8;--paper2:#FBF7F2;
+  --mutd:#D9D2C5;--mutl:#575756;--body-l:#3A3536;--gray:#9D9D9C;--linel:#C4BBAC;--red:#ED1C24;--slate:#455E6E;
+  --fd:'Archivo',Arial,sans-serif;--fb:'Montserrat',Arial,sans-serif;
+  --px:min(calc(100vw / 1920),calc(100vh / 1080));
+  --t-display:calc(160*var(--px));--t-xl:calc(96*var(--px));--t-big:calc(96*var(--px));--t-stat:calc(72*var(--px));
+  --t-h2:calc(72*var(--px));--t-h3:calc(28*var(--px));--t-lead:calc(28*var(--px));--t-body:calc(24*var(--px));--t-small:calc(22*var(--px));
+  --pad-x:calc(128*var(--px));--pad-t:calc(112*var(--px));--pad-b:calc(150*var(--px));
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-snap-type:y proximity;background:var(--ink);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fb);color:var(--paper);background:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,figure{margin:0}
+img{display:block;max-width:100%}
+b,strong{font-weight:700}
+a{color:inherit}
+
+/* ---------- slide base ---------- */
+.slide{position:relative;min-height:100vh;min-height:100svh;padding:var(--pad-t) var(--pad-x) var(--pad-b);display:flex;flex-direction:column;gap:calc(40*var(--px));scroll-snap-align:start;overflow:hidden}
+.dark{background:var(--ink);color:var(--paper)}
+.light{background:var(--sand);color:var(--ink)}
+.red{background:var(--red);color:var(--paper2)}
+.notes{display:none}
+
+.head{display:flex;flex-direction:column;gap:calc(14*var(--px))}
+.eyebrow{display:flex;align-items:center;gap:calc(12*var(--px));font:700 var(--t-small)/1.2 var(--fb);letter-spacing:.14em;text-transform:uppercase}
+.dark .eyebrow{color:var(--mutd)}
+.eyebrow svg{width:calc(26*var(--px));height:calc(26*var(--px));min-width:14px;min-height:14px;color:var(--red);flex:none}
+.h2{font-family:var(--fd);font-weight:900;font-stretch:108%;font-size:var(--t-h2);line-height:1.02;letter-spacing:-.02em}
+.h3{font-family:var(--fd);font-weight:800;font-stretch:104%;font-size:var(--t-h3);line-height:1.2}
+.h3u{font-family:var(--fd);font-weight:900;font-stretch:110%;font-size:var(--t-h3);letter-spacing:.04em;text-transform:uppercase;line-height:1.2}
+.lead{font-size:var(--t-lead);line-height:1.38;font-weight:600}
+.p{font-size:var(--t-body);line-height:1.42}
+.small{font-size:var(--t-small);line-height:1.4}
+.lbl{font:700 var(--t-small)/1.25 var(--fb);letter-spacing:.12em;text-transform:uppercase}
+.mut{color:var(--mutd)}
+.light .mut{color:var(--mutl)}
+.light .soft{color:var(--body-l)}
+.dark .soft{color:var(--mutd)}
+.rt{color:var(--red)}
+.big{font-family:var(--fd);font-weight:900;font-stretch:100%;font-size:var(--t-big);line-height:.95;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat{font-family:var(--fd);font-weight:900;font-size:var(--t-stat);line-height:1;letter-spacing:-.02em}
+.display{font-family:var(--fd);font-weight:900;font-stretch:112%;font-size:var(--t-display);line-height:.92;letter-spacing:-.025em}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(calc(28*var(--px)));transition:opacity .8s var(--ease) calc(var(--d,0)*90ms),transform .9s var(--ease) calc(var(--d,0)*90ms)}
+.js .in .rv{opacity:1;transform:none}
+
+/* ---------- cover ---------- */
+.cover{display:grid;grid-template-columns:minmax(0,1fr) 45%;padding:0;gap:0}
+.cover .txt{padding:var(--pad-t) var(--pad-x) calc(96*var(--px));display:flex;flex-direction:column;justify-content:space-between;gap:calc(40*var(--px))}
+.logo-tgt{width:calc(250*var(--px));min-width:150px;height:auto}
+.cv-main{display:flex;flex-direction:column;gap:calc(28*var(--px))}
+.cover .display{font-size:calc(150*var(--px))}
+.cv-arrow{display:inline-block;width:.55em;height:.55em;margin-left:.1em;vertical-align:-.04em}
+.cv-arrow path{fill:none;stroke:var(--red);stroke-width:14;stroke-linecap:square;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.1s var(--ease) .9s}
+.in .cv-arrow path,html:not(.js) .cv-arrow path{stroke-dashoffset:0}
+.pics{display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.pics figure{position:relative;overflow:hidden}
+.pics figure>img:first-child{width:100%;height:100%;object-fit:cover}
+.pics figure::after{content:"";position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(to top,rgba(35,31,32,.92),rgba(35,31,32,0))}
+.blogo{position:absolute;z-index:2;left:50%;bottom:calc(120*var(--px));transform:translateX(-50%);width:calc(200*var(--px));min-width:110px;height:auto}
+.blogo.jr{width:calc(186*var(--px));min-width:100px}
+.kb{animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.03)}to{transform:scale(1.13)}}
+
+/* ---------- divider ---------- */
+.divider{display:grid;grid-template-columns:1fr 1fr;padding:0;gap:0}
+.divider .txt{padding:var(--pad-t) var(--pad-x) calc(128*var(--px));display:flex;flex-direction:column;justify-content:flex-end;gap:calc(18*var(--px))}
+.divider .num{font-family:var(--fd);font-weight:900;font-stretch:125%;font-size:var(--t-display);line-height:.85;color:var(--red);letter-spacing:-.03em}
+.divider h2{font-family:var(--fd);font-weight:900;font-stretch:115%;font-size:var(--t-xl);line-height:.98;text-transform:uppercase;letter-spacing:-.01em}
+.divider .pic{position:relative;overflow:hidden}
+.divider .pic img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 2.4s var(--ease)}
+.in.divider .pic img{transform:scale(1)}
+
+/* ---------- common grids ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(48*var(--px))}
+.col{display:flex;flex-direction:column;gap:calc(12*var(--px));border-top:max(3px,calc(6*var(--px))) solid currentColor;padding-top:calc(24*var(--px))}
+.col.r{border-top-color:var(--red)}
+.col.g{border-top-color:var(--gray)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:calc(48*var(--px))}
+.rule{border-top:2px solid currentColor;padding-top:calc(18*var(--px))}
+.band{background:var(--ink);color:var(--paper);padding:calc(30*var(--px)) calc(40*var(--px))}
+.band.sl{background:var(--slate)}
+.item{font-size:var(--t-body);line-height:1.38;padding:calc(12*var(--px)) 0;border-bottom:1px solid var(--lined)}
+.light .item{border-bottom-color:var(--linel)}
+.item:last-child{border-bottom:0}
+.item.lg{font-size:var(--t-lead)}
+.card{background:var(--sand2);padding:calc(32*var(--px));display:flex;flex-direction:column;gap:calc(12*var(--px))}
+.dark .card{background:var(--ink2)}
+.card.dk{background:var(--ink);color:var(--paper)}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(56*var(--px)) calc(64*var(--px))}
+.stats>div{border-top:2px solid var(--mutl);padding-top:calc(24*var(--px));display:flex;flex-direction:column;gap:calc(10*var(--px))}
+.stats>div.r{border-top-color:var(--red)}
+
+/* ---------- timeline ---------- */
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tl{display:grid;grid-template-columns:calc(210*var(--px)) repeat(5,minmax(0,1fr))}
+.tl>p{font-size:var(--t-body);line-height:1.32;padding:calc(16*var(--px));border-bottom:1px solid var(--gray)}
+.tl .th{font-weight:700;padding-top:0;padding-bottom:calc(12*var(--px));border-bottom:3px solid var(--ink)}
+.tl .br{font-weight:700;padding-left:0}
+.tl .br::before{content:"";display:inline-block;width:.62em;height:.62em;background:var(--c,var(--ink));margin-right:.45em;vertical-align:.02em}
+.tl .q{transition:background .3s}
+.tl .q:hover{background:var(--sand2)}
+
+/* ---------- bars ---------- */
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:calc(14*var(--px)) calc(30*var(--px));font-size:var(--t-body);font-weight:600}
+.legend .mut{font-weight:400}
+.sw{display:inline-block;width:.9em;height:.9em;vertical-align:-.1em;margin-right:.45em}
+.c-dvg{background:var(--ink)}.c-jr{background:var(--red)}.c-amb{background:var(--gray)}.c-sl{background:var(--slate)}.c-pp{background:var(--paper);outline:1px solid var(--gray);outline-offset:-1px}
+.bar{display:flex;height:calc(26*var(--px));min-height:12px;transform-origin:left;transform:scaleX(0);transition:transform 1.1s var(--ease) calc(var(--d,0)*70ms + 150ms)}
+.in .bar,html:not(.js) .bar{transform:none}
+.bar i{display:block;height:100%}
+.frow{display:grid;grid-template-columns:calc(380*var(--px)) calc(420*var(--px)) calc(64*var(--px)) 1fr;gap:calc(24*var(--px));align-items:center;padding:calc(11*var(--px)) 0;border-bottom:1px solid var(--linel)}
+.frow .nm{font-weight:700;font-size:var(--t-body)}
+.frow .tot{font-family:var(--fd);font-weight:900;font-size:calc(30*var(--px));min-width:2ch}
+.frow .ex{font-size:var(--t-body);color:var(--mutl)}
+
+/* ---------- route chart ---------- */
+.rota{display:grid;grid-template-columns:auto minmax(0,1fr);gap:calc(72*var(--px));align-items:start}
+.bars4{display:flex;gap:calc(44*var(--px));align-items:flex-end}
+.bcol{display:flex;flex-direction:column;align-items:center;gap:calc(8*var(--px));font-size:var(--t-body)}
+.stack{width:calc(168*var(--px));height:calc(420*var(--px));display:flex;flex-direction:column;transform-origin:bottom;transform:scaleY(0);transition:transform 1.2s var(--ease) calc(var(--d,0)*120ms + 200ms)}
+.in .stack,html:not(.js) .stack{transform:none}
+.stack i{display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:700;font-size:var(--t-body);overflow:hidden}
+.s-o{background:var(--paper);color:var(--ink)}.s-m{background:var(--gray);color:var(--ink)}.s-d{background:var(--ink);color:var(--paper)}.s-t{background:var(--red);color:var(--paper2)}
+.ins p{font-size:var(--t-lead);font-weight:600;line-height:1.35;padding:calc(14*var(--px)) 0;border-top:1px solid var(--gray)}
+.ins p:first-child{border-top:2px solid var(--ink)}
+.leg-v{display:flex;flex-direction:column;gap:calc(10*var(--px));font-size:var(--t-body)}
+
+/* ---------- audience ---------- */
+.aud{display:grid;grid-template-columns:calc(1040*var(--px)) minmax(0,1fr);gap:calc(64*var(--px));align-items:start}
+.chart{width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--fb);font-size:24px;fill:var(--mutl)}
+.chart .lbl-j{fill:var(--red);font-weight:700}
+.chart .lbl-d{fill:var(--ink);font-weight:700}
+.ln{fill:none;stroke-width:6;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2s var(--ease) .35s}
+.in .ln,html:not(.js) .ln{stroke-dashoffset:0}
+.dot{opacity:0;transition:opacity .5s ease 2.1s}
+.in .dot,html:not(.js) .dot{opacity:1}
+
+/* ---------- campaigns ---------- */
+.camp{display:grid;grid-template-columns:calc(1040*var(--px)) minmax(0,1fr);gap:calc(56*var(--px));align-items:start}
+.crows{display:flex;flex-direction:column;gap:calc(12*var(--px))}
+.crow{display:grid;grid-template-columns:calc(400*var(--px)) 1fr calc(140*var(--px));gap:calc(20*var(--px));align-items:center;font-size:var(--t-body)}
+.crow .nm{font-weight:600}
+.crow .v{font-weight:700;text-align:right}
+.crow .bar{height:calc(24*var(--px))}
+
+/* ---------- tables ---------- */
+.tbl{width:100%;border-collapse:collapse;font-size:var(--t-body);line-height:1.35}
+.tbl th{background:var(--ink);color:var(--paper);text-align:left;font-weight:700;padding:calc(13*var(--px)) calc(16*var(--px))}
+.tbl td{padding:calc(13*var(--px)) calc(16*var(--px));vertical-align:top}
+.tbl tr:nth-child(even) td{background:var(--sand2)}
+.tbl tr:nth-child(odd) td{background:var(--sand3)}
+
+/* ---------- gaps ---------- */
+.gaps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(32*var(--px))}
+.gap{background:var(--ink2);border-top:max(3px,calc(4*var(--px))) solid var(--red);padding:calc(32*var(--px));display:flex;flex-direction:column;gap:calc(12*var(--px));transition:transform .4s var(--ease),background .4s}
+.gap:hover{transform:translateY(-4px);background:#35302F}
+.gap .n{font-family:var(--fd);font-weight:900;font-size:var(--t-small);color:var(--red)}
+
+/* ---------- statement ---------- */
+.virada{justify-content:space-between}
+.virada .display{font-stretch:112%}
+.virada .ln-t{display:block}
+.virada .band{max-width:calc(1180*var(--px))}
+
+/* ---------- funnel ---------- */
+.fun{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:calc(16*var(--px));align-items:stretch}
+.farrow{align-self:center;width:calc(40*var(--px));min-width:22px;height:auto;color:var(--red)}
+.fcard{background:var(--sand2);padding:calc(32*var(--px));display:flex;flex-direction:column;gap:calc(16*var(--px))}
+.fcard.dk{background:var(--ink);color:var(--paper)}
+.fcard .ind{border-top:1px solid var(--linel);padding-top:calc(14*var(--px))}
+.fcard.dk .ind{border-top-color:var(--mutl)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(16*var(--px))}
+.steps .card{gap:calc(10*var(--px));padding:calc(26*var(--px))}
+.steps .t{font-family:var(--fd);font-weight:900;font-stretch:110%;font-size:var(--t-stat);line-height:1;color:var(--red)}
+.steps .it{font-size:var(--t-body);line-height:1.35;border-top:1px solid var(--linel);padding-top:calc(12*var(--px))}
+.steps .card.dk .it{border-top-color:var(--mutl)}
+
+/* ---------- events ---------- */
+.ex2{display:grid;grid-template-columns:1fr 1fr;gap:calc(32*var(--px))}
+.exc{background:var(--ink2);padding:calc(28*var(--px));display:flex;align-items:center;gap:calc(28*var(--px))}
+.exc img{width:calc(150*var(--px));min-width:84px;height:auto;flex:none}
+
+/* ---------- creators & media ---------- */
+.cm{display:grid;grid-template-columns:calc(800*var(--px)) minmax(0,1fr);gap:calc(56*var(--px))}
+.tier{background:var(--ink2);border-left:max(4px,calc(6*var(--px))) solid var(--red);padding:calc(28*var(--px)) calc(32*var(--px));display:flex;flex-direction:column;gap:calc(8*var(--px))}
+.tier.g{border-left-color:var(--gray)}.tier.s{border-left-color:var(--slate)}
+.box{border:2px solid var(--red);padding:calc(24*var(--px));display:flex;flex-direction:column;gap:calc(8*var(--px))}
+
+/* ---------- roadmap ---------- */
+.rm{display:grid;grid-template-columns:calc(1064*var(--px)) minmax(0,1fr);gap:calc(40*var(--px))}
+.months{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(20*var(--px))}
+.months .card{gap:calc(8*var(--px));padding:calc(28*var(--px))}
+.months .it{font-size:var(--t-body);line-height:1.35;padding:calc(10*var(--px)) 0;border-top:1px solid var(--linel)}
+.dec{background:var(--ink);color:var(--paper);padding:calc(36*var(--px));display:flex;flex-direction:column;gap:calc(12*var(--px))}
+.dec p{font-size:var(--t-lead);font-weight:600;line-height:1.35;padding-top:calc(12*var(--px));border-top:1px solid var(--mutl)}
+.dec p span{color:var(--red);font-family:var(--fd);font-weight:900;margin-right:.35em}
+
+/* ---------- closing ---------- */
+.closing{justify-content:flex-end;padding-top:calc(480*var(--px))}
+.strip{position:absolute;left:0;right:0;top:0;height:calc(400*var(--px));display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.strip img{width:100%;height:calc(400*var(--px));object-fit:cover}
+.closing .display .rt{color:var(--red)}
+.sign{display:flex;align-items:center;gap:calc(40*var(--px));flex-wrap:wrap}
+
+/* ---------- HUD ---------- */
+.progress{position:fixed;left:0;top:0;right:0;height:3px;z-index:50;background:transparent}
+.progress i{display:block;height:100%;width:0;background:var(--red);transition:width .5s var(--ease)}
+.hud{position:fixed;z-index:40;left:calc(128*var(--px));right:calc(128*var(--px));bottom:calc(48*var(--px));display:flex;justify-content:space-between;align-items:center;gap:16px;pointer-events:none;color:var(--paper);transition:color .4s}
+body[data-theme=light] .hud{color:var(--ink)}
+.hud>*{pointer-events:auto}
+.hud-sec{font-size:max(12px,calc(20*var(--px)));letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.75}
+.hud-r{display:flex;align-items:center;gap:8px}
+.hb{appearance:none;border:1px solid currentColor;background:transparent;color:inherit;font:600 max(12px,calc(18*var(--px)))/1 var(--fb);height:max(34px,calc(44*var(--px)));padding:0 max(12px,calc(16*var(--px)));border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .25s,color .25s,border-color .25s;opacity:.85}
+.hb:hover,.hb:focus-visible{background:var(--red);border-color:var(--red);color:var(--paper2);opacity:1;outline:none}
+.hb.ic{width:max(34px,calc(44*var(--px)));padding:0;justify-content:center}
+.hb svg{width:16px;height:16px}
+.hud-n{font:700 max(13px,calc(20*var(--px)))/1 var(--fb);font-variant-numeric:tabular-nums;min-width:4.6em;text-align:center}
+.hud-n b{color:var(--red)}
+body[data-theme=red] .hud-n b{color:var(--paper2)}
+.hint{position:fixed;z-index:45;left:50%;top:24px;transform:translateX(-50%);background:rgba(35,31,32,.86);color:var(--paper);font:600 13px/1.2 var(--fb);padding:10px 16px;border-radius:999px;backdrop-filter:blur(8px);transition:opacity .6s;letter-spacing:.02em}
+.hint.off{opacity:0;pointer-events:none}
+
+/* overlay index */
+.ovl{position:fixed;inset:0;z-index:60;background:rgba(35,31,32,.97);color:var(--paper);overflow:auto;padding:clamp(24px,6vw,96px);opacity:0;pointer-events:none;transition:opacity .35s}
+.ovl.on{opacity:1;pointer-events:auto}
+.ovl-h{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:clamp(20px,3vw,48px)}
+.ovl-h h2{font-family:var(--fd);font-weight:900;font-stretch:110%;font-size:clamp(28px,3.4vw,56px)}
+.idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:clamp(20px,2.4vw,40px)}
+.idx h3{font:700 13px/1.2 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 10px}
+.idx ol{list-style:none;margin:0;padding:0}
+.idx a{display:flex;gap:12px;text-decoration:none;padding:9px 0;border-bottom:1px solid var(--lined);font-size:clamp(14px,1.05vw,18px);color:var(--mutd);transition:color .2s,padding .2s}
+.idx a span{font-variant-numeric:tabular-nums;color:var(--gray);min-width:2ch}
+.idx a:hover,.idx a.cur{color:var(--paper);padding-left:6px}
+.idx a.cur span{color:var(--red)}
+
+/* drawer */
+.drw{position:fixed;z-index:55;top:0;right:0;bottom:0;width:min(520px,92vw);background:var(--paper);color:var(--ink);padding:clamp(24px,3vw,44px);overflow:auto;transform:translateX(102%);transition:transform .45s var(--ease);box-shadow:-30px 0 60px rgba(0,0,0,.25)}
+.drw.on{transform:none}
+.drw .lbl{color:var(--red);font-size:13px}
+.drw h3{font-family:var(--fd);font-weight:900;font-stretch:108%;font-size:clamp(22px,1.8vw,30px);margin:8px 0 18px;line-height:1.1}
+.drw p{font-size:15px;line-height:1.6;color:var(--body-l)}
+.drw .hb{position:absolute;top:18px;right:18px;color:var(--ink)}
+
+/* ---------- mobile / portrait: flowing layout ---------- */
+@media (max-aspect-ratio:1/1),(max-width:760px),(max-height:520px){
+  :root{
+    --px:min(calc(100vw / 585),.9px);
+    --t-display:clamp(54px,15vw,104px);--t-xl:clamp(34px,9.6vw,60px);--t-big:clamp(52px,14vw,80px);--t-stat:clamp(40px,11vw,60px);
+    --t-h2:clamp(30px,8.4vw,48px);--t-h3:19px;--t-lead:18px;--t-body:16px;--t-small:13px;
+    --pad-x:22px;--pad-t:64px;--pad-b:110px;
+  }
+  html{scroll-snap-type:none}
+  .slide{min-height:auto;gap:28px}
+  .cover,.divider{min-height:100svh}
+  .cover{grid-template-columns:1fr;grid-template-rows:46svh auto}
+  .cover .pics{order:-1}
+  .cover .txt{padding:28px var(--pad-x) 120px;gap:28px}
+  .cover .display{font-size:var(--t-display)}
+  .blogo{bottom:22px}
+  .divider{grid-template-columns:1fr;grid-template-rows:42svh auto}
+  .divider .pic{order:-1}
+  .divider .txt{padding:32px var(--pad-x) 110px}
+  .grid3,.stats,.gaps,.two,.ex2,.aud,.camp,.rota,.cm,.rm,.months,.steps{grid-template-columns:minmax(0,1fr)}
+  .stats{gap:28px}
+  .fun{grid-template-columns:minmax(0,1fr)}
+  .farrow{transform:rotate(90deg);justify-self:center;width:26px}
+  .frow{grid-template-columns:1fr auto;gap:8px 12px;padding:12px 0}
+  .frow .bar{grid-column:1/-1;grid-row:2}
+  .frow .ex{grid-column:1/-1;grid-row:3;font-size:14px}
+  .crow{grid-template-columns:1fr auto;gap:6px 12px}
+  .crow .bar{grid-column:1/-1;grid-row:2}
+  .tl{min-width:880px;grid-template-columns:150px repeat(5,minmax(0,1fr))}
+  .tl>p{font-size:14px;padding:12px}
+  .tbl{min-width:620px;font-size:14px}
+  .bars4{gap:12px;justify-content:space-between}
+  .stack{width:19vw;height:280px}
+  .stack i{font-size:13px}
+  .bcol{font-size:13px;text-align:center}
+  .exc{flex-direction:column;align-items:flex-start}
+  .virada{min-height:100svh}
+  .virada .band{max-width:none}
+  .closing{padding-top:0;min-height:auto}
+  .strip{position:relative;height:auto;grid-template-columns:1fr 1fr;margin:0 calc(-1*var(--pad-x)) 8px}
+  .strip img{aspect-ratio:1/1;height:auto}
+  .hud{left:12px;right:12px;bottom:12px}
+  .hud-sec{display:none}
+  .hud-r{background:rgba(35,31,32,.82);color:var(--paper);padding:6px;border-radius:999px;backdrop-filter:blur(8px);margin-left:auto}
+  body[data-theme=light] .hud{color:var(--paper)}
+  .hb.fs{display:none}
+  .hint{display:none}
+}
+
+/* ---------- motion & print ---------- */
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  .bar,.stack{transform:none;transition:none}
+  .ln{stroke-dashoffset:0;transition:none}.dot{opacity:1;transition:none}
+  .kb{animation:none}.divider .pic img{transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+@media print{
+  @page{size:1920px 1080px;margin:0}
+  :root{--px:1px}
+  html{scroll-snap-type:none}
+  .slide{height:1080px;min-height:0;break-after:page;page-break-after:always}
+  .js .rv{opacity:1;transform:none}
+  .bar,.stack{transform:none}.ln{stroke-dashoffset:0}.dot{opacity:1}
+  .kb{animation:none}.divider .pic img{transform:none}
+  .hud,.progress,.hint,.ovl,.drw{display:none!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body data-theme="dark">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arw" viewBox="0 0 28 28"><path d="M5 23 L22 6 M9 6 H22 V19" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="square"/></symbol>
+  <symbol id="i-l" viewBox="0 0 24 24"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="i-r" viewBox="0 0 24 24"><path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="i-fs" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="i-fr" viewBox="0 0 40 24"><path d="M2 12 H34 M24 3 L36 12 L24 21" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square"/></symbol>
+</svg>
+<div class="progress" aria-hidden="true"><i></i></div>
+<div class="hint" id="hint">Use ← → ou role · I índice · S fontes · F tela cheia</div>
+
+<main id="deck">
+
+<!-- 01 CAPA -->
+<section class="slide dark cover" id="s-01" data-theme="dark" data-sec="Abertura" data-title="Review Brands">
+  <div class="txt">
+    <img class="logo-tgt rv" src="/review-brands/assets/logo-tgt.png" alt="TGT Studio, a agência além do marketing" width="424" height="122">
+    <div class="cv-main">
+      <p class="lbl mut rv" style="--d:1">Kerry · Food Service LATAM</p>
+      <h1 class="display rv" style="--d:2">Review<br><span style="white-space:nowrap">Brands<svg class="cv-arrow" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M18 102 L98 22 M38 22 H98 V82"/></svg></span></h1>
+      <p class="lead rv" style="--d:3">DaVinci Gourmet e Júnior Food Service<br><span class="mut" style="font-weight:500">Out/2025 a out/2026 · o que fizemos, o que aprendemos e como avançar</span></p>
+    </div>
+    <p class="small rv" style="--d:4;color:var(--gray)">TGT Studio · novembro de 2026</p>
+  </div>
+  <div class="pics">
+    <figure><img class="kb" src="/review-brands/assets/cover-dvg.webp" alt="Drink rosé em taça de martíni preparado com DaVinci Gourmet"><img class="blogo" src="/review-brands/assets/logo-dvg.png" alt="DaVinci Gourmet" width="445" height="237"></figure>
+    <figure><img class="kb" src="/review-brands/assets/cover-jr.webp" alt="Molho Júnior sendo aplicado sobre um lanche"><img class="blogo jr" src="/review-brands/assets/logo-jr.png" alt="Júnior" width="842" height="396"></figure>
+  </div>
+  <div class="notes">Apresentação para a liderança comercial de Food Service LATAM da Kerry. Período analisado: 1º de outubro de 2025 a 31 de outubro de 2026. Estrutura: síntese executiva e números; 01 O que fizemos; 02 O que aprendemos; 03 Como avançar. Todos os números vêm do repositório Brands (Monday, Drive, Reportei, relatórios mensais e TGT Hub), com link para cada fonte.</div>
+</section>
+
+<!-- 02 SINTESE -->
+<section class="slide light" id="s-02" data-theme="light" data-sec="Abertura" data-title="Síntese executiva">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>Abertura</p>
+    <h2 class="h2">Síntese executiva</h2>
+  </div>
+  <div class="grid3">
+    <div class="col rv" style="--d:1">
+      <p class="lbl mut">01 · O que fizemos</p>
+      <p class="big" data-count="276">276</p>
+      <p class="lead">demandas em 13 meses</p>
+      <p class="lead soft" style="font-weight:400">148 DVG, 76 Júnior e 52 conjuntas; 83% entregues. Trade e eventos: de 13% para ~40%.</p>
+    </div>
+    <div class="col rv" style="--d:2">
+      <p class="lbl mut">02 · O que aprendemos</p>
+      <p class="big" data-count="37" data-pre="+" data-suf="%">+37%</p>
+      <p class="lead">audiência Júnior no Instagram</p>
+      <p class="lead soft" style="font-weight:400">DVG +19,5%. Mas mais de 90% do alcance é pago, mirando seguidores, e a demanda não é medida.</p>
+    </div>
+    <div class="col r rv" style="--d:3">
+      <p class="lbl mut">03 · Como avançar</p>
+      <p class="big rt">3</p>
+      <p class="lead">frentes, um só funil</p>
+      <p class="lead soft" style="font-weight:400">Dia a dia, Eventos e feiras, Lançamentos: do operador ao distribuidor, com demanda medida.</p>
+    </div>
+  </div>
+  <div class="band rv" style="--d:4"><p class="lead"><span class="rt">Pedimos à Kerry:</span> aprovar o funil e os indicadores · teste de 90 dias com a verba atual · ponto focal comercial para os leads · fila de aprovação priorizada.</p></div>
+  <div class="notes">Mensagem central: um ano de muitas entregas, com a operação puxada para trade, PDV e eventos; audiência em alta, mas comprada com objetivo de seguidores e sem medição de demanda. A proposta é reconectar conteúdo, eventos e lançamentos num funil que fala com o operador e termina no distribuidor, testando por 90 dias com a verba atual antes de qualquer aumento. Fontes: Monday quadro BRANDS (276 cards de DVG e Júnior no período; 76 Júnior inclui 2 cards classificados pelo nome); Reportei out/25 e TGT Hub out/26 (seguidores); Reportei out e dez/25 (alcance pago); Google Ads e GA4 via Reportei e Hub (conversões).</div>
+</section>
+
+<!-- 03 NUMEROS -->
+<section class="slide dark" id="s-03" data-theme="dark" data-sec="Abertura" data-title="O período em números">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>Abertura</p>
+    <h2 class="h2">O período em números</h2>
+  </div>
+  <div class="stats">
+    <div class="rv" style="--d:1"><p class="big" data-count="276">276</p><p class="p mut">demandas registradas no Monday para DaVinci Gourmet e Júnior</p></div>
+    <div class="rv" style="--d:2"><p class="big" data-count="83" data-suf="%">83%</p><p class="p mut">entregues ou publicadas (228); outras 15 aguardam aprovação</p></div>
+    <div class="rv" style="--d:3"><p class="big" data-count="67.6" data-dec="1" data-suf=" mil">67,6 mil</p><p class="p mut">seguidores da Júnior no Instagram, +37% no período</p></div>
+    <div class="rv" style="--d:4"><p class="big" data-count="41.5" data-dec="1" data-suf=" mil">41,5 mil</p><p class="p mut">seguidores da DaVinci Gourmet no Instagram, +19,5%</p></div>
+    <div class="r rv" style="--d:5"><p class="big rt" data-count="90" data-pre="&gt;" data-suf="%">&gt;90%</p><p class="p mut">do alcance no Instagram veio de mídia paga (out e dez/25)</p></div>
+    <div class="r rv" style="--d:6"><p class="big rt">0</p><p class="p mut">conversões registradas no Google Ads: a demanda ainda não é medida</p></div>
+  </div>
+  <div class="notes">Fontes. 276 demandas e 83%: Monday quadro BRANDS, cards criados entre out/25 e out/26 (228 entregues ou publicadas, 15 em aprovação do cliente, 15 pausadas, demais em produção). Seguidores: Reportei out/25 (DVG 34.690; Júnior 49.333) e TGT Hub out/26 (DVG 41.463; Júnior 67.568). Alcance pago: Reportei out/25 e dez/25, DVG 93% e 97%, Júnior 93% e 95%. Conversões: Google Ads out/25 (Reportei) e ago–out/26 (TGT Hub) com 0 conversões; GA4 da DVG sem evento-chave configurado.</div>
+</section>
+
+<!-- 04 DIVIDER 01 -->
+<section class="slide dark divider" id="s-04" data-theme="dark" data-sec="01 · O que fizemos" data-title="01. O que fizemos">
+  <div class="txt">
+    <p class="num rv">01.</p>
+    <h2 class="rv" style="--d:1">O que<br>fizemos</h2>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Linha do tempo, frentes por marca e a mudança de rota em 2026.</p>
+  </div>
+  <div class="pic"><img src="/review-brands/assets/div01.webp" alt="Linha de xaropes DaVinci Gourmet com drinks coloridos sobre o balcão" loading="lazy"></div>
+  <div class="notes">Primeira parte: o histórico organizado a partir do Monday, do Drive e dos relatórios, sem contar o mesmo material duas vezes.</div>
+</section>
+
+<!-- 05 LINHA DO TEMPO -->
+<section class="slide light" id="s-05" data-theme="light" data-sec="01 · O que fizemos" data-title="Linha do tempo">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">Linha do tempo</h2>
+  </div>
+  <div class="scrollx rv" style="--d:1">
+    <div class="tl">
+      <p class="th mut">Marca</p><p class="th">4º tri/25</p><p class="th">1º tri/26</p><p class="th">2º tri/26</p><p class="th">3º tri/26</p><p class="th">Out/26</p>
+      <p class="br" style="--c:var(--ink)">DaVinci Gourmet</p>
+      <p class="q">Calda Pistache<br>SIC e BCC<br>Linha Sensations</p>
+      <p class="q">100 Best Coffee Shops<br>BCC Nacional</p>
+      <p class="q">BCC Global<br>SP Coffee Festival<br>Festival do Pistache</p>
+      <p class="q">Burguerpedia Day</p>
+      <p class="q">Bag in Box e NitroJet em aprovação</p>
+      <p class="br" style="--c:var(--gray)">Conjuntas</p>
+      <p class="q">Halloween<br>Exxxplosão de Sabores</p>
+      <p class="q">Verão + Carnaval<br>Convenção PXT</p>
+      <p class="q">TikTok no ar<br>Copa do Mundo<br>Encontro de Hamburgueiros</p>
+      <p class="q">Burger Expo<br>Stands regionais e de distribuidores</p>
+      <p class="q">Super Mix<br>Brandbooks e sites</p>
+      <p class="br" style="--c:var(--red)">Júnior</p>
+      <p class="q">50 mil seguidores no Instagram</p>
+      <p class="q">Camarote Brahma<br>Novos frascos</p>
+      <p class="q">Massas e Frangos<br>Sweet Chilli e Maionese Verde</p>
+      <p class="q">Caldos e Sopas<br>Jhow BBQ: ~600 mil views por vídeo</p>
+      <p class="q">Molho do Chef</p>
+    </div>
+  </div>
+  <div class="notes">Marcos selecionados do repositório (aba Linha do tempo, com link para cada card do Monday ou matéria). DVG: Calda Sabor Pistache (GiroNews, 24/10/25), Semana Internacional do Café, plano de incentivo do BCC, Linha Sensations e Pink Lemonade; BCC Etapa Nacional (mar/26) e Global (mai/26); SP Coffee Festival e Festival do Pistache (jun–jul/26); Bag in Box, NitroJet e vídeo Sensations em aprovação em out/26. Júnior: 50 mil seguidores em dez/25; Camarote Brahma com molhos em refil (GiroNews, 11/02/26); novos frascos; Sweet Chilli e Maionese Verde (jun/26); vídeos de Jhow BBQ no TikTok com ~596 mil e ~630 mil visualizações em ago/26 (com TikTok Ads); Molho do Chef em out/26. Conjuntas: perfis no TikTok desde abr/26; Encontro de Hamburgueiros (RJ, mai/26); Burger Expo (jul/26); stands Recife, DF e distribuidores (ago–set/26); Karne Keijo Super Mix (out/26); brandbooks e revamp dos sites (versão aprovada em out/26).</div>
+</section>
+
+<!-- 06 FRENTES -->
+<section class="slide light" id="s-06" data-theme="light" data-sec="01 · O que fizemos" data-title="Onde a TGT atuou">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">Onde a TGT atuou</h2>
+  </div>
+  <div class="legend rv" style="--d:1"><span><i class="sw c-dvg"></i>DaVinci Gourmet (148)</span><span><i class="sw c-jr"></i>Júnior (76)</span><span><i class="sw c-amb"></i>Conjuntas (52)</span><span class="mut">· demandas no Monday, out/25–out/26</span></div>
+  <div class="rv" style="--d:2">
+    <div class="frow"><p class="nm">Trade, PDV e ativação</p><div class="bar" style="--d:0"><i class="c-dvg" style="width:62.12%"></i><i class="c-jr" style="width:18.18%"></i><i class="c-amb" style="width:19.70%"></i></div><p class="tot">66</p><p class="ex">Displays, cardápios, PDV e campanha Karne Keijo</p></div>
+    <div class="frow"><p class="nm">Social e conteúdo</p><div class="bar" style="--d:1"><i class="c-dvg" style="width:45.45%"></i><i class="c-jr" style="width:34.85%"></i><i class="c-amb" style="width:10.61%"></i></div><p class="tot">60</p><p class="ex">Planejamento e posts mensais; TikTok desde abr/26</p></div>
+    <div class="frow"><p class="nm">Materiais comerciais</p><div class="bar" style="--d:2"><i class="c-dvg" style="width:25.76%"></i><i class="c-jr" style="width:15.15%"></i><i class="c-amb" style="width:13.64%"></i></div><p class="tot">36</p><p class="ex">Apresentações para convenções, redes e distribuidores</p></div>
+    <div class="frow"><p class="nm">Eventos e feiras</p><div class="bar" style="--d:3"><i class="c-dvg" style="width:30.30%"></i><i class="c-jr" style="width:10.61%"></i><i class="c-amb" style="width:12.12%"></i></div><p class="tot">35</p><p class="ex">BCC, SIC, SP Coffee Festival, Burger Expo, stands</p></div>
+    <div class="frow"><p class="nm">Lançamentos e campanhas</p><div class="bar" style="--d:4"><i class="c-dvg" style="width:22.73%"></i><i class="c-jr" style="width:16.67%"></i></div><p class="tot">26</p><p class="ex">Pistache, Sensations, novos molhos; Verão, Copa, festivais</p></div>
+    <div class="frow"><p class="nm">Embalagem e mockups</p><div class="bar" style="--d:5"><i class="c-dvg" style="width:16.67%"></i><i class="c-jr" style="width:10.61%"></i><i class="c-amb" style="width:1.52%"></i></div><p class="tot">19</p><p class="ex">Novos frascos Júnior, Bag in Box, mockups</p></div>
+    <div class="frow"><p class="nm">Creators e parcerias</p><div class="bar" style="--d:6"><i class="c-dvg" style="width:13.64%"></i><i class="c-jr" style="width:4.55%"></i><i class="c-amb" style="width:3.03%"></i></div><p class="tot">14</p><p class="ex">Emerson, Guia do Hambúrguer, Jhow BBQ, mapeamentos</p></div>
+    <div class="frow"><p class="nm">Relatórios e outros</p><div class="bar" style="--d:7"><i class="c-dvg" style="width:7.58%"></i><i class="c-jr" style="width:4.55%"></i><i class="c-amb" style="width:18.18%"></i></div><p class="tot">20</p><p class="ex">Relatórios mensais, vídeo e revamp dos sites</p></div>
+  </div>
+  <div class="notes">Classificação por frente feita sobre os 276 cards do quadro BRANDS no período (aba Ações e entregas do repositório). Cada card conta uma vez; os posts de social estão nos subitens dos cards mensais, por isso Social e conteúdo aparece como 60 cards, não como número de posts. DVG concentra trade, PDV e eventos (BCC, SIC, convenções KFC, Amiste, Cacau Show, Cheirin Bão). Júnior tem peso maior em social e campanhas. Relatórios e outros soma relatórios (11), vídeo (4), sites (2) e outros (3).</div>
+</section>
+
+<!-- 07 ROTA -->
+<section class="slide light" id="s-07" data-theme="light" data-sec="01 · O que fizemos" data-title="A rota mudou">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">A rota mudou</h2>
+  </div>
+  <div class="rota">
+    <div class="bars4 rv" style="--d:1" role="img" aria-label="Participação das frentes por trimestre. Trade, PDV e eventos: 13%, 38%, 43% e 42%. Conteúdo digital: 59%, 36%, 31% e 29%.">
+      <div class="bcol"><div class="stack" style="--d:0"><i class="s-o" style="flex:0 0 5%"></i><i class="s-m" style="flex:0 0 23%">23%</i><i class="s-d" style="flex:0 0 59%">59%</i><i class="s-t" style="flex:0 0 13%">13%</i></div><b>4º tri/25</b><span class="mut">39 demandas</span></div>
+      <div class="bcol"><div class="stack" style="--d:1"><i class="s-o" style="flex:0 0 7%"></i><i class="s-m" style="flex:0 0 19%">19%</i><i class="s-d" style="flex:0 0 36%">36%</i><i class="s-t" style="flex:0 0 38%">38%</i></div><b>1º tri/26</b><span class="mut">91 demandas</span></div>
+      <div class="bcol"><div class="stack" style="--d:2"><i class="s-o" style="flex:0 0 9%">9%</i><i class="s-m" style="flex:0 0 17%">17%</i><i class="s-d" style="flex:0 0 31%">31%</i><i class="s-t" style="flex:0 0 43%">43%</i></div><b>2º tri/26</b><span class="mut">77 demandas</span></div>
+      <div class="bcol"><div class="stack" style="--d:3"><i class="s-o" style="flex:0 0 9%">9%</i><i class="s-m" style="flex:0 0 20%">20%</i><i class="s-d" style="flex:0 0 29%">29%</i><i class="s-t" style="flex:0 0 42%">42%</i></div><b>3º tri/26</b><span class="mut">55 demandas</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:calc(32*var(--px))">
+      <div class="leg-v rv" style="--d:2">
+        <span><i class="sw c-jr"></i>Trade, PDV e eventos</span>
+        <span><i class="sw c-dvg"></i>Conteúdo digital: social, campanhas, lançamentos, creators</span>
+        <span><i class="sw c-amb"></i>Materiais comerciais e embalagem</span>
+        <span><i class="sw c-pp"></i>Relatórios, sites e outros</span>
+      </div>
+      <div class="ins rv" style="--d:3">
+        <p>Trade e eventos: de 13% para 38–43% por trimestre</p>
+        <p>Conteúdo digital: de 59% para cerca de 30%</p>
+        <p>Creators: de 13% das demandas para zero a partir de jul/26</p>
+        <p>Ago–out/26: a maior parte dos pedidos veio do trade marketing</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes">Participação de cada frente no total de demandas criadas no trimestre (Monday, quadro BRANDS). Conteúdo digital = social, campanhas, lançamentos e creators. Trade, PDV e eventos = trade, PDV e ativação mais eventos e feiras. Out/26 (14 demandas, mês parcial) segue o mesmo padrão: 36% trade e eventos, 29% digital. O volume do 4º tri/25 pode estar subestimado, porque parte do trabalho anterior pode estar registrada em outros quadros. Leitura: a TGT passou a atuar sobretudo como braço de trade, PDV e eventos; o digital continuou, mas com menos campanhas e sem creators novos.</div>
+</section>
+
+<!-- 08 CONTINUIDADE -->
+<section class="slide dark" id="s-08" data-theme="dark" data-sec="01 · O que fizemos" data-title="Continuidade e mudança">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>01 · O que fizemos</p>
+    <h2 class="h2">Continuidade e mudança</h2>
+    <p class="lead mut" style="font-weight:400">As prioridades mudaram ao longo do período, e a operação acompanhou.</p>
+  </div>
+  <div class="grid3">
+    <div class="col rv" style="--d:1">
+      <h3 class="h3u">Seguiu</h3>
+      <div><p class="item lg mut">Social mensal no Instagram das duas marcas</p><p class="item lg mut">Datas e festivais: Verão, Copa, Pistache</p><p class="item lg mut">Eventos do café: SIC, BCC e SP Coffee Festival</p><p class="item lg mut">Parceiros fixos: Emerson, Guia do Hambúrguer e Jhow BBQ</p></div>
+    </div>
+    <div class="col g rv" style="--d:2">
+      <h3 class="h3u">Mudou</h3>
+      <div><p class="item lg mut">Foco em trade, PDV, convenções e stands</p><p class="item lg mut">TikTok aberto em abr/26, com mídia paga</p><p class="item lg mut">Aprovações por e-mail, fora do Monday</p><p class="item lg mut">Relatórios mensais até julho/26</p></div>
+    </div>
+    <div class="col r rv" style="--d:3">
+      <h3 class="h3u">Ficou no plano</h3>
+      <div><p class="item lg mut">6 de 8 ações de creators de out–dez/25</p><p class="item lg mut">Creators DVG 2026, com voucher até o distribuidor</p><p class="item lg mut">Série educativa sobre xaropes concentrados</p><p class="item lg mut">Frappé Mocha, DVG Protein e Linha Profissional, pausados</p></div>
+    </div>
+  </div>
+  <div class="notes">Seguiu: cards mensais de social no Monday (DVG de 8 a 24 posts por mês; Júnior de 9 a 21), calendário de festivais e eventos do café, briefings de Emerson e Guia do Hambúrguer (dez/25 a abr/26) e vídeos de Jhow BBQ. Mudou: mix de demandas (slide anterior); perfis de TikTok desde abr/26; pedido da Kerry para comunicação por e-mail; último relatório mensal localizado é o de julho. Ficou no plano: ações de creators do plano 2025 para out–dez/25 sem comprovação de execução; Plano Creators DVG 2026 (voucher via QR, formulário, comercial e distribuidor); série sobre xaropes concentrados proposta; também a proposta Júnior + Pai na Chapa (On Hold) e o pacote de 6 meses com Jhow BBQ (decisão não localizada). Frappé Mocha, DVG Protein e Linha Profissional estão nos grupos de pausados e em aprovação.</div>
+</section>
+
+<!-- 09 DIVIDER 02 -->
+<section class="slide dark divider" id="s-09" data-theme="dark" data-sec="02 · O que aprendemos" data-title="02. O que aprendemos">
+  <div class="txt">
+    <p class="num rv">02.</p>
+    <h2 class="rv" style="--d:1">O que<br>aprendemos</h2>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Audiência, campanhas, creators, mídia paga e as lacunas que limitam o impacto.</p>
+  </div>
+  <div class="pic"><img src="/review-brands/assets/div02.webp" alt="Molhos Júnior Alhonese, Chiminese e Dijonese com hambúrgueres" loading="lazy"></div>
+  <div class="notes">Segunda parte: resultados comprovados e aprendizados. Só entram números com fonte; onde não há dado confiável, o slide diz isso.</div>
+</section>
+
+<!-- 10 AUDIENCIA -->
+<section class="slide light" id="s-10" data-theme="light" data-sec="02 · O que aprendemos" data-title="A audiência cresceu">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">A audiência cresceu</h2>
+  </div>
+  <div class="aud">
+    <div class="rv" style="--d:1">
+      <svg class="chart" viewBox="0 0 1040 556" role="img" aria-label="Seguidores no Instagram de out/25 a out/26. Júnior de 49,3 mil para 67,6 mil; DaVinci Gourmet de 34,7 mil para 41,5 mil.">
+        <g stroke="#C4BBAC" stroke-width="2"><line x1="20" y1="130" x2="1020" y2="130"/><line x1="20" y1="240" x2="1020" y2="240"/><line x1="20" y1="350" x2="1020" y2="350"/></g>
+        <line x1="20" y1="460" x2="1020" y2="460" stroke="#575756" stroke-width="2"/>
+        <text x="28" y="120">60 mil</text><text x="28" y="230">50 mil</text><text x="28" y="340">40 mil</text><text x="28" y="450">30 mil</text>
+        <polyline class="ln" pathLength="1" stroke="#ED1C24" points="20,247 103,240 187,229 353,196 437,181 520,171 603,141 687,117 770,104 853,87 937,59 1020,47"/>
+        <polyline class="ln" pathLength="1" stroke="#231F20" points="20,408 103,402 187,400 353,395 437,388 520,379 603,370 687,366 770,363 853,351 937,341 1020,334"/>
+        <g class="dot"><circle cx="20" cy="247" r="8" fill="#ED1C24"/><circle cx="1020" cy="47" r="11" fill="#ED1C24"/><circle cx="20" cy="408" r="8" fill="#231F20"/><circle cx="1020" cy="334" r="11" fill="#231F20"/></g>
+        <text class="lbl-j" x="600" y="192">Júnior</text>
+        <text class="lbl-d" x="520" y="322">DaVinci Gourmet</text>
+        <text x="20" y="540">out/25</text><text x="270" y="540" text-anchor="middle">jan/26</text><text x="520" y="540" text-anchor="middle">abr/26</text><text x="770" y="540" text-anchor="middle">jul/26</text><text x="1020" y="540" text-anchor="end">out/26</text>
+      </svg>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:calc(8*var(--px))">
+      <p class="big rt rv" style="--d:2" data-count="37" data-pre="+" data-suf="%">+37%</p>
+      <p class="p rv" style="--d:2;padding-bottom:calc(20*var(--px))">Júnior no Instagram: de 49,3 mil para 67,6 mil seguidores</p>
+      <p class="big rv" style="--d:3" data-count="19.5" data-dec="1" data-pre="+" data-suf="%">+19,5%</p>
+      <p class="p rv" style="--d:3;padding-bottom:calc(20*var(--px))">DaVinci Gourmet: de 34,7 mil para 41,5 mil</p>
+      <div class="rule rv" style="--d:4"><p class="p"><b>TikTok, desde abr/26</b></p><p class="p soft">Em 3 meses, DVG chegou a 2,5 mil seguidores e Júnior a 3,0 mil. A cadência caiu em set–out/26.</p></div>
+    </div>
+  </div>
+  <div class="notes">Seguidores no Instagram ao fim de cada mês. Fontes: Reportei out–dez/25; relatórios mensais da TGT mar–jul/26 (fev e abr calculados a partir do ganho informado no mês seguinte); TGT Hub ago–out/26. Jan/26 sem dado: a linha liga dez/25 a fev/26. Ressalva importante: em out e dez/25, mais de 90% do alcance do Instagram veio de mídia paga, com campanhas de seguidores; o crescimento é real, mas comprado com objetivo de audiência, não de demanda. TikTok (relatório de julho): DVG 2.540 seguidores e 255,8 mil visualizações em 3 meses, engajamento 7,4%; Júnior 2.975 seguidores e 168,8 mil visualizações, abaixo da projeção mínima de 200 mil. Em set/26, 3 posts de TikTok DVG foram cancelados; em out/26, 3 de Júnior não foram iniciados. TikTok orgânico não sincroniza no Hub.</div>
+</section>
+
+<!-- 11 CAMPANHAS -->
+<section class="slide light" id="s-11" data-theme="light" data-sec="02 · O que aprendemos" data-title="O que performou">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">O que performou</h2>
+    <p class="lead">Temas de cardápio e datas sazonais lideram; o maior alcance por peça veio de creator recorrente.</p>
+  </div>
+  <div class="camp">
+    <div class="crows rv" style="--d:1">
+      <div class="crow"><p class="nm">Verão + Carnaval · Júnior</p><div class="bar" style="--d:0"><i class="c-jr" style="width:100%"></i></div><p class="v">243 mil</p></div>
+      <div class="crow"><p class="nm">Verão + Carnaval · DVG</p><div class="bar" style="--d:1"><i class="c-dvg" style="width:71.41%"></i></div><p class="v">174 mil</p></div>
+      <div class="crow"><p class="nm">Copa do Mundo · Júnior</p><div class="bar" style="--d:2"><i class="c-jr" style="width:59.44%"></i></div><p class="v">144 mil</p></div>
+      <div class="crow"><p class="nm">Festival do Pistache · DVG</p><div class="bar" style="--d:3"><i class="c-dvg" style="width:49.10%"></i></div><p class="v">119 mil</p></div>
+      <div class="crow"><p class="nm">Copa do Mundo · DVG</p><div class="bar" style="--d:4"><i class="c-dvg" style="width:33.45%"></i></div><p class="v">81 mil</p></div>
+      <div class="crow"><p class="nm">BCC Etapa Nacional · DVG</p><div class="bar" style="--d:5"><i class="c-dvg" style="width:31.23%"></i></div><p class="v">76 mil</p></div>
+      <div class="crow"><p class="nm">Novos molhos · Júnior*</p><div class="bar" style="--d:6"><i class="c-jr" style="width:19.22%"></i></div><p class="v">47 mil</p></div>
+      <div class="crow"><p class="nm">Massas e Frangos · Júnior</p><div class="bar" style="--d:7"><i class="c-jr" style="width:13.89%"></i></div><p class="v">34 mil</p></div>
+      <div class="crow"><p class="nm">Caldos e Sopas · Júnior*</p><div class="bar" style="--d:8"><i class="c-jr" style="width:13.70%"></i></div><p class="v">33 mil</p></div>
+      <p class="p mut" style="padding-top:calc(12*var(--px))">Visualizações no Instagram, soma dos posts de cada campanha. *Parcial no fechamento do relatório. Copa: engajamento de 5,1% na Júnior e 2,0% na DVG. BCC Nacional: +34% sobre 2024.</p>
+    </div>
+    <div class="card dk rv" style="--d:3;padding:calc(40*var(--px));gap:calc(16*var(--px))">
+      <p class="lbl" style="color:var(--mutd)">TikTok · creator recorrente</p>
+      <p class="big rt" data-count="630" data-suf=" mil">630 mil</p>
+      <p class="lead">visualizações em um vídeo de Jhow BBQ para a Júnior (ago/26). Outro, no mesmo mês, somou 596 mil.</p>
+      <p class="p mut">Com TikTok Ads ativo. Para comparar: Brazilian Latte, da DVG, somou 131 mil.</p>
+    </div>
+  </div>
+  <div class="notes">Fontes: relatórios mensais da TGT de março (Verão + Carnaval, BCC Nacional), maio (Copa), junho e julho (Pistache, Massas e Frangos, novos molhos Sweet Chilli e Maionese Verde, Caldos e Sopas). Número de posts: Verão + Carnaval 10 DVG e 11 Júnior; Copa 15 por marca; Pistache 12; Massas e Frangos 7; novos molhos 5; Caldos e Sopas 3. Visualizações não estão normalizadas por número de posts nem por duração. TikTok: TGT Hub (tt_social_desempenho) — churrasco de Dia dos Pais 629.827 e costelinha com Dijonnese Trufada 596.064 visualizações, ambos em ago/26 com TikTok Ads ativo; Brazilian Latte (DVG) 130.736 em jul/26. Imprensa: três matérias na GiroNews (Calda Pistache, Camarote Brahma, molhos para diferenciar cardápios). Intenção de compra por DM só foi medida em mar/26: 6 DVG e 21 Júnior.</div>
+</section>
+
+<!-- 12 CREATORS -->
+<section class="slide dark" id="s-12" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Creators: plano × real">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Creators: plano × real</h2>
+    <p class="p" style="color:var(--gray)">Valores do plano são previsões. A comparação usa o acompanhamento no Drive e os registros do Monday.</p>
+  </div>
+  <div class="grid3">
+    <div class="col rv" style="--d:1"><p class="lbl" style="color:var(--gray)">Plano 2025 · proposta</p><p class="big" data-count="27">27</p><p class="lead">ações propostas</p><p class="p mut">13 DVG e 14 Júnior. R$ 23,1 mil previstos nas ações com valor definido; 5 sem orçamento.</p></div>
+    <div class="col g rv" style="--d:2"><p class="lbl" style="color:var(--gray)">Execução comprovada</p><p class="big rt">2 de 8</p><p class="lead">ações de out–dez/25</p><p class="p mut">De fev a set/25 foram 18 de 19, quase sempre com troca de creator ou de valor.</p></div>
+    <div class="col r rv" style="--d:3"><p class="lbl" style="color:var(--gray)">O que funcionou</p><p class="big">3</p><p class="lead">parceiros fixos</p><p class="p mut">Emerson e Guia do Hambúrguer na DVG; Jhow BBQ na Júnior, com até 630 mil views por vídeo no TikTok.</p></div>
+  </div>
+  <div class="rv" style="--d:4;border-top:1px solid var(--mutl);padding-top:calc(24*var(--px));display:flex;flex-direction:column;gap:calc(8*var(--px))">
+    <p class="p"><b>2026 até aqui</b></p>
+    <p class="p mut">8 creators de TikTok mapeados, com retorno de 2 por marca · Expo Burger: faixa indicada pela Kerry de R$ 2,5–3,5 mil por creator · Plano Creators DVG 2026, com voucher e lead para o distribuidor, sem execução localizada.</p>
+  </div>
+  <div class="notes">Plano 2025 (arquivo de proposta): DVG 13 ações, R$ 10.700 com valor definido e 4 aguardando orçamento; Júnior 14 ações, R$ 14.400 e 1 aguardando. A ação Dia dos Namorados DVG + Júnior (R$ 2.000) aparece nas duas abas e foi contada uma vez, por isso o total é R$ 23,1 mil. Acompanhamento no Drive: execução com trocas frequentes de creator e de valor. No período analisado (out–dez/25), 2 das 8 ações têm registro de execução: Emerson no Dia Internacional do Café e chamada BCC (DVG) e Lucas Melga no Dia do Macarrão (Júnior); as outras 6 não têm comprovação no Monday, no Drive ou no Hub. Valores planejados não comprovam pagamento. 2026: 8 creators de TikTok mapeados (valores de R$ 1.000 a R$ 215.000 por pacote), mapeamento para a Expo Burger e Plano Creators DVG 2026 (abr/26).</div>
+</section>
+
+<!-- 13 MIDIA -->
+<section class="slide light" id="s-13" data-theme="light" data-sec="02 · O que aprendemos" data-title="Mídia paga hoje">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Mídia paga hoje</h2>
+  </div>
+  <div class="grid3" style="gap:calc(32*var(--px))">
+    <div class="card rv" style="--d:1"><p class="stat" data-count="8.4" data-dec="1" data-pre="R$ " data-suf=" mil">R$ 8,4 mil</p><p class="p soft">por mês nas duas marcas, somando Meta, Google e TikTok (média ago–out/26)</p></div>
+    <div class="card rv" style="--d:2"><p class="stat rt" data-count="90" data-pre="&gt;" data-suf="%">&gt;90%</p><p class="p soft">do alcance do Instagram veio de mídia paga (out e dez/25)</p></div>
+    <div class="card rv" style="--d:3"><p class="stat rt">0</p><p class="p soft">conversões no Google Ads; GA4 da DVG sem evento-chave</p></div>
+  </div>
+  <div class="scrollx rv" style="--d:4">
+    <table class="tbl">
+      <tr><th style="width:16%">Canal</th><th style="width:44%">Investimento mensal (ago–out/26)</th><th style="width:40%">Objetivo hoje</th></tr>
+      <tr><td>Meta Ads</td><td>DVG R$ 2,7–3,0 mil · Júnior R$ 1,9–2,0 mil</td><td>Seguidores; público inclui consumidor final</td></tr>
+      <tr><td>Google Ads</td><td>Cerca de R$ 1,0 mil por marca</td><td>Tráfego para o site; 0 conversões</td></tr>
+      <tr><td>TikTok Ads</td><td>R$ 0,6–2,0 mil, as duas marcas somadas</td><td>Engajamento e ganho de seguidores</td></tr>
+    </table>
+  </div>
+  <div class="rv" style="--d:5;display:flex;align-items:center;gap:calc(16*var(--px))"><svg style="width:calc(40*var(--px));height:calc(40*var(--px));min-width:20px;min-height:20px;color:var(--red);flex:none"><use href="#arw"/></svg><p class="lead">A verba compra audiência ampla. O próximo passo é direcioná-la a quem compra, o operador, e medir o caminho até o distribuidor.</p></div>
+  <div class="notes">Fontes: Reportei out–dez/25 e TGT Hub ago–out/26 (Meta Ads, Google Ads, GA4 e mídia diária). Meta Ads DVG: R$ 3.000,68 (ago), R$ 2.749,89 (set), R$ 3.035,71 (out); em out–dez/25, R$ 1.998 a R$ 3.053. Meta Ads Júnior: R$ 1.953,82, R$ 1.926,93 e R$ 2.000,46 em ago–out/26; em out–dez/25 o relatório mostra os valores em “$”. Campanhas Meta com objetivo de seguidores e engajamento (lookalike SP + Sul), incluindo segmentação de consumidor final. Google Ads: R$ 2.994 (DVG) e R$ 2.968 (Júnior) em três meses, 0 conversões. TikTok Ads: R$ 1.879, R$ 2.000 e R$ 606 em ago, set e out/26, nas duas marcas. A média de R$ 8,4 mil/mês é uma soma aproximada desses três canais. Alcance pago: DVG 93% e 97%, Júnior 93% e 95% em out e dez/25.</div>
+</section>
+
+<!-- 14 LACUNAS -->
+<section class="slide dark" id="s-14" data-theme="dark" data-sec="02 · O que aprendemos" data-title="Lacunas a fechar">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>02 · O que aprendemos</p>
+    <h2 class="h2">Lacunas a fechar</h2>
+  </div>
+  <div class="gaps">
+    <div class="gap rv" style="--d:1"><p class="n">01</p><h3 class="h3">Fila de aprovação</h3><p class="p mut">15 entregas aguardam aprovação e 15 estão pausadas, entre elas DVG Protein, Frappé Mocha, Bag in Box e NitroJet.</p></div>
+    <div class="gap rv" style="--d:2"><p class="n">02</p><h3 class="h3">Leitura de resultados</h3><p class="p mut">Relatórios mensais de mar a jul/26; de ago a out/26, sem leitura consolidada. A cadência do TikTok caiu em set–out.</p></div>
+    <div class="gap rv" style="--d:3"><p class="n">03</p><h3 class="h3">Demanda sem medição</h3><p class="p mut">Google Ads sem conversões e GA4 da DVG sem evento-chave. O formulário da Júnior recebe envios, sem retorno sobre venda.</p></div>
+    <div class="gap rv" style="--d:4"><p class="n">04</p><h3 class="h3">Pós-evento</h3><p class="p mut">A Kerry pede conteúdo rápido nos eventos. Não há rotina registrada de follow-up dos contatos gerados.</p></div>
+    <div class="gap rv" style="--d:5"><p class="n">05</p><h3 class="h3">Educação de produto</h3><p class="p mut">A série sobre xaropes concentrados foi pedida e proposta; a execução não foi localizada.</p></div>
+    <div class="gap rv" style="--d:6"><p class="n">06</p><h3 class="h3">Fluxo e acessos</h3><p class="p mut">Aprovações por e-mail, fora do Monday, dispersam histórico e prazos. Acessos às contas sem padrão definido.</p></div>
+  </div>
+  <div class="notes">01: grupos On Hold e Em Aprovação do quadro BRANDS (DVG Protein, KV Frappé Mocha, Linha Profissional Júnior, revamp molhos de salada, Flavour Genius 2026, display de garrafas; em aprovação em out/26: Bag in Box, NitroJet, vídeo Linha Sensations, mockups Júnior). 02: relatórios de ago, set e out/26 não localizados no Monday nem no Drive; cards de TikTok de set (DVG, 3 cancelados) e out/26 (Júnior, 3 não iniciados). 03: Reportei e TGT Hub; formulário Júnior com 51, 65 e 37 envios em out, nov e dez/25. 04 e 05: comentários da Kerry no Monday (pedido para não perder o timing dos eventos; estratégia para educar sobre xaropes concentrados). 06: pedido de comunicação por e-mail porque o time da Kerry não acessa o Monday; recomendação de padronizar acessos às contas das marcas (perfis nominais e cofre de senhas).</div>
+</section>
+
+<!-- 15 DIVIDER 03 -->
+<section class="slide dark divider" id="s-15" data-theme="dark" data-sec="03 · Como avançar" data-title="03. Como avançar">
+  <div class="txt">
+    <p class="num rv">03.</p>
+    <h2 class="rv" style="--d:1">Como<br>avançar</h2>
+    <p class="lead mut rv" style="--d:2;font-weight:400;max-width:30ch">Estratégia, três frentes de ação, creators e mídia, e os próximos 90 dias.</p>
+  </div>
+  <div class="pic"><img src="/review-brands/assets/div03.webp" alt="Drink DaVinci Gourmet ao lado de hambúrguer e batatas" loading="lazy"></div>
+  <div class="notes">Terceira parte: recomendações. Tudo o que vem a seguir é proposta, não fato; as premissas que precisam de validação estão indicadas.</div>
+</section>
+
+<!-- 16 VIRADA -->
+<section class="slide red virada" id="s-16" data-theme="red" data-sec="03 · Como avançar" data-title="Do alcance à venda pelo distribuidor">
+  <p class="lbl rv">03 · Como avançar</p>
+  <h2 class="display"><span class="ln-t rv" style="--d:1">Do alcance</span><span class="ln-t rv" style="--d:2">à venda pelo</span><span class="ln-t rv" style="--d:3">distribuidor.</span></h2>
+  <div class="band rv" style="--d:5"><p class="lead">Mesma verba, nova direção: falar com quem opera o cardápio e medir a demanda até o distribuidor.</p></div>
+  <div class="notes">A ideia central da proposta. Hoje a verba compra audiência ampla; a mudança é de direção, não de tamanho: público profissional (donos, chefs, baristas, bartenders e chapeiros), conteúdo útil para o cardápio e um caminho medido até o distribuidor. Qualquer aumento de investimento só depois do teste de 90 dias.</div>
+</section>
+
+<!-- 17 FUNIL -->
+<section class="slide light" id="s-17" data-theme="light" data-sec="03 · Como avançar" data-title="Um funil para food service">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Um funil para food service</h2>
+  </div>
+  <div class="fun">
+    <div class="fcard rv" style="--d:1"><h3 class="h3"><span class="rt">1</span> · Awareness qualificado</h3><p class="p"><b>Para quem:</b> donos, chefs, baristas e chapeiros</p><p class="p"><b>Como:</b> mídia segmentada e creators do nicho</p><p class="p ind"><b>Indicador:</b> alcance no público profissional</p></div>
+    <svg class="farrow rv" style="--d:2" viewBox="0 0 40 24" aria-hidden="true"><use href="#i-fr"/></svg>
+    <div class="fcard rv" style="--d:3"><h3 class="h3"><span class="rt">2</span> · Consideração</h3><p class="p"><b>Conteúdo:</b> receita, aplicação e custo por porção</p><p class="p"><b>Prova:</b> operadores reais usando o produto</p><p class="p ind"><b>Indicador:</b> salvamentos, cliques e DMs de compra</p></div>
+    <svg class="farrow rv" style="--d:4" viewBox="0 0 40 24" aria-hidden="true"><use href="#i-fr"/></svg>
+    <div class="fcard dk rv" style="--d:5"><h3 class="h3"><span class="rt">3</span> · Demanda no distribuidor</h3><p class="p"><b>Fluxo:</b> QR ou voucher, formulário único, comercial Kerry</p><p class="p"><b>Destino:</b> pedido no distribuidor da região</p><p class="p ind"><b>Indicador:</b> leads, amostras e pedidos (dado Kerry)</p></div>
+  </div>
+  <div class="band sl rv" style="--d:6"><p class="lead">Base de mensuração: UTMs, eventos no GA4, formulário único, planilha de leads compartilhada e painel mensal por marca.</p></div>
+  <div class="notes">Recomendação. O funil organiza as três frentes (dia a dia, eventos e lançamentos) com o mesmo objetivo: levar o operador da descoberta ao pedido no distribuidor. Etapa 1 reaproveita a verba atual de mídia, trocando o objetivo de seguidores por alcance em público profissional. Etapa 2 é onde o conteúdo útil (receita, rendimento, custo por porção) e os creators recorrentes já mostraram resultado. Etapa 3 retoma a lógica do Plano Creators DVG 2026 (voucher via QR, formulário, comercial e distribuidor), que ficou no planejamento. Premissas a validar com a Kerry: quem recebe os leads no comercial, como o distribuidor registra o pedido e se é possível acessar dados de sell-in por região.</div>
+</section>
+
+<!-- 18 DIA A DIA -->
+<section class="slide light" id="s-18" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 1 · Dia a dia">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Frente 1 · Dia a dia</h2>
+  </div>
+  <div class="scrollx rv" style="--d:1">
+    <table class="tbl">
+      <tr><th style="width:28%">Ação e prioridade</th><th style="width:25%">DaVinci Gourmet</th><th style="width:25%">Júnior</th><th style="width:22%">Indicador</th></tr>
+      <tr><td><b class="rt">P1</b> · Rito semanal de aprovação e fila priorizada</td><td>Destravar Bag in Box, NitroJet e vídeo Sensations</td><td>Destravar Linha Profissional e mockups</td><td>Tempo de aprovação e itens em fila</td></tr>
+      <tr><td><b class="rt">P1</b> · Calendário trimestral por público</td><td>Bebida do mês para cafeterias e bares</td><td>Molho da semana para hamburguerias</td><td>Salvamentos e DMs de compra</td></tr>
+      <tr><td><b>P2</b> · Kit comercial vivo, atualizado a cada lançamento</td><td>Fichas de drinks e cafés com custo por dose</td><td>Fichas de aplicação com custo por porção</td><td>Uso do kit pelo time comercial</td></tr>
+      <tr><td><b>P2</b> · Relatório mensal de uma página</td><td>Audiência, consideração e demanda</td><td>Mesma régua, por marca</td><td>Entrega até o 5º dia útil</td></tr>
+    </table>
+  </div>
+  <div class="two rule rv" style="--d:2">
+    <p class="p"><b>Quem:</b> TGT planeja, produz e reporta; Marketing Kerry prioriza e aprova; trade e comercial trazem o campo.</p>
+    <p class="p"><b>Quando:</b> rito semanal de 30 minutos, calendário fechado a cada trimestre e relatório todo mês.</p>
+  </div>
+  <div class="notes">Recomendação. P1 = começar já; P2 = no primeiro trimestre. O rito de aprovação responde à fila de 15 itens aguardando aprovação e ao fluxo por e-mail. O calendário por público retoma o que funcionou (conteúdo útil para quem opera o cardápio) e dá destino ao banco de editorias criado em out/26. O kit comercial vivo aproveita o volume de materiais comerciais já produzidos (36 demandas no período) e o transforma em ferramenta de venda. O relatório mensal de uma página volta a dar leitura de resultados, interrompida depois de julho. Premissas a validar: disponibilidade do time de marketing da Kerry para o rito semanal e acesso do comercial ao kit.</div>
+</section>
+
+<!-- 19 EVENTOS -->
+<section class="slide dark" id="s-19" data-theme="dark" data-sec="03 · Como avançar" data-title="Frente 2 · Eventos e feiras">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Frente 2 · Eventos e feiras</h2>
+  </div>
+  <div class="grid3">
+    <div class="col r rv" style="--d:1"><h3 class="h3">Antes <span class="rt">· T-30 a T-1</span></h3><div><p class="item mut">Objetivo e meta de contatos por evento</p><p class="item mut">Convite a operadores e distribuidores da região</p><p class="item mut">Kit: display, cardápio de degustação e QR de cadastro</p></div></div>
+    <div class="col r rv" style="--d:2"><h3 class="h3">Durante <span class="rt">· no dia</span></h3><div><p class="item mut">Cadastro por QR em formulário único</p><p class="item mut">Conteúdo publicado no mesmo dia</p><p class="item mut">Registro de pedidos de amostra e de distribuidor</p></div></div>
+    <div class="col r rv" style="--d:3"><h3 class="h3">Depois <span class="rt">· D+2 a D+30</span></h3><div><p class="item mut">Follow-up em até 48 h com receita e ficha técnica</p><p class="item mut">Leads enviados ao comercial e ao distribuidor</p><p class="item mut">Recap em 7 dias e leitura em 30 dias</p></div></div>
+  </div>
+  <div class="ex2">
+    <div class="exc rv" style="--d:4"><img src="/review-brands/assets/logo-dvg.png" alt="DaVinci Gourmet" width="445" height="237"><p class="p">BCC e SP Coffee Festival: barra de bebidas com QR “receba a receita” e voucher de degustação no distribuidor.</p></div>
+    <div class="exc rv" style="--d:5"><img src="/review-brands/assets/logo-jr.png" alt="Júnior" width="842" height="396"><p class="p">Burger Expo e Encontro de Hamburgueiros: estação de molhos com chapeiro convidado e kit de amostra pós-evento.</p></div>
+  </div>
+  <p class="p mut rv" style="--d:6"><b style="color:var(--paper)">Indicadores:</b> contatos qualificados · follow-up em 48 h · amostras · pedidos via distribuidor em 30 e 60 dias. <b style="color:var(--paper)">Quem:</b> trade Kerry (estande, convites, distribuidores) · TGT (kit, conteúdo, formulário, relatório) · comercial (follow-up).</p>
+  <div class="notes">Recomendação. Eventos e feiras somaram 35 demandas no período e, junto com trade e PDV, passaram a ser o centro da operação em 2026. A régua antes, durante e depois responde a dois pontos levantados: o pedido da Kerry para não perder o timing do conteúdo nos eventos e a ausência de rotina registrada de follow-up dos contatos. Os exemplos usam eventos que já estão no calendário das marcas (BCC, SP Coffee Festival, Burger Expo, Encontro de Hamburgueiros). Premissas a validar: quem no comercial recebe os leads, se os distribuidores aceitam voucher de degustação e qual meta de contatos faz sentido por porte de evento.</div>
+</section>
+
+<!-- 20 LANCAMENTOS -->
+<section class="slide light" id="s-20" data-theme="light" data-sec="03 · Como avançar" data-title="Frente 3 · Lançamentos">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Frente 3 · Lançamentos</h2>
+  </div>
+  <div class="steps">
+    <div class="card rv" style="--d:1"><p class="t">T-60</p><h3 class="h3">Preparar</h3><p class="it">Briefing único: público, argumento e preço por porção</p><p class="it">Plano de conteúdo, mídia e creators</p></div>
+    <div class="card rv" style="--d:2"><p class="t">T-30</p><h3 class="h3">Equipar</h3><p class="it">Kit de vendas: one-pager, ficha técnica e vídeo de 30 s</p><p class="it">Treino rápido do time comercial e dos distribuidores</p></div>
+    <div class="card rv" style="--d:3"><p class="t">T0</p><h3 class="h3">Lançar</h3><p class="it">Conteúdo de aplicação com creators do nicho</p><p class="it">Mídia para operadores e imprensa do setor</p></div>
+    <div class="card dk rv" style="--d:4"><p class="t">T+90</p><h3 class="h3">Sustentar</h3><p class="it">Receitas e casos de clientes reais</p><p class="it">Presença nos eventos e leitura de sell-in</p></div>
+  </div>
+  <div class="two rv" style="--d:5">
+    <p class="p"><b>DaVinci Gourmet:</b> Bag in Box, NitroJet, DVG Protein e Frappé Mocha estão na fila e podem estrear esta régua.</p>
+    <p class="p"><b>Júnior:</b> Molho do Chef e Linha Profissional na fila. Referência recente: Sweet Chilli e Maionese Verde, 46,7 mil visualizações (parcial).</p>
+  </div>
+  <p class="p soft rule rv" style="--d:6"><b>Indicadores:</b> time com kit no T0 · distribuidores ativados · amostras · sell-in em 30, 60 e 90 dias (dado Kerry). <b>Quem:</b> Kerry define produto e prioridade; TGT estrutura e produz; comercial leva ao mercado.</p>
+  <div class="notes">Recomendação. Uma régua única para todo lançamento, das duas marcas, ligando marketing, comercial e distribuidores. No período houve vários lançamentos (Calda Pistache, Linha Sensations, Pink Lemonade, novos frascos Júnior, Sweet Chilli e Maionese Verde), mas sem kit de vendas padronizado nem leitura de sell-in. A imprensa do setor já respondeu bem: três matérias na GiroNews. Os itens na fila (Bag in Box, NitroJet, DVG Protein, Frappé Mocha, Molho do Chef, Linha Profissional) podem ser os primeiros a seguir a régua. Premissas a validar: acesso a dados de sell-in por distribuidor e janela real de cada lançamento.</div>
+</section>
+
+<!-- 21 CREATORS E MIDIA -->
+<section class="slide dark" id="s-21" data-theme="dark" data-sec="03 · Como avançar" data-title="Creators, UGC e mídia">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Creators, UGC e mídia</h2>
+  </div>
+  <div class="cm">
+    <div style="display:flex;flex-direction:column;gap:calc(20*var(--px))">
+      <div class="tier rv" style="--d:1"><h3 class="h3">Âncoras recorrentes</h3><p class="p mut">2 por marca, em contratos de 6 meses. Modelo que já funciona: Emerson e Guia do Hambúrguer (DVG), Jhow BBQ (Júnior).</p></div>
+      <div class="tier g rv" style="--d:2"><h3 class="h3">Especialistas de nicho</h3><p class="p mut">Microcreators por campanha ou evento: baristas, bartenders e chapeiros. Referência da Kerry: R$ 2,5–3,5 mil por creator.</p></div>
+      <div class="tier s rv" style="--d:3"><h3 class="h3">UGC de operadores</h3><p class="p mut">Clientes reais mostrando o produto no próprio cardápio, com contrapartida simples: destaque nos perfis e kit.</p></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:calc(24*var(--px))">
+      <div class="rv" style="--d:2">
+        <h3 class="h3u" style="padding-bottom:calc(8*var(--px))">Regras do jogo</h3>
+        <p class="item mut" style="border-top:1px solid var(--lined)">Direito de uso em contrato: orgânico e mídia, com prazo definido</p>
+        <p class="item mut">Mídia no conteúdo do creator (anúncios de parceria e Spark Ads) no lugar de campanhas de seguidores</p>
+        <p class="item mut">QR ou cupom por creator para medir a demanda</p>
+        <p class="item mut">Teste de 90 dias com a verba atual; ampliar só com dado</p>
+      </div>
+      <div class="box rv" style="--d:3"><p class="lbl">Premissas a validar</p><p class="p mut">Verba 2027 · regras da Kerry para influenciadores · capacidade do comercial para receber leads · acesso ao sell-in por distribuidor.</p></div>
+    </div>
+  </div>
+  <div class="notes">Recomendação, sem valores definitivos. Base factual: o que performou foram parceiros recorrentes do nicho (Emerson, Guia do Hambúrguer, Jhow BBQ); ações pontuais com perfis grandes ficaram no planejamento; a Kerry indicou faixa de R$ 2,5 a 3,5 mil por creator para a Expo Burger, com perfis menores e nichados. Sobre mídia: hoje a verba de Meta busca seguidores e inclui consumidor final; a proposta é usar a mesma verba para impulsionar o conteúdo dos creators junto a públicos profissionais e medir por QR ou cupom. TikTok: os maiores resultados do período (596 mil e 630 mil visualizações) vieram de conteúdo de creator com mídia ativa. Direitos de uso: não foram localizados contratos com prazo de uso de imagem; recomenda-se padronizar.</div>
+</section>
+
+<!-- 22 ROADMAP -->
+<section class="slide light" id="s-22" data-theme="light" data-sec="03 · Como avançar" data-title="Próximos 90 dias">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>03 · Como avançar</p>
+    <h2 class="h2">Próximos 90 dias</h2>
+  </div>
+  <div class="rm">
+    <div class="months">
+      <div class="card rv" style="--d:1"><p class="lbl rt">Mês 1</p><h3 class="h3" style="padding-bottom:4px">Base</h3><p class="it">Fila de aprovação destravada</p><p class="it">UTMs, GA4 e formulário único no ar</p><p class="it">Mídia redirecionada a operadores</p></div>
+      <div class="card rv" style="--d:2"><p class="lbl rt">Mês 2</p><h3 class="h3" style="padding-bottom:4px">Teste</h3><p class="it">1 creator âncora por marca, com mídia</p><p class="it">1 evento com antes, durante e depois</p><p class="it">Kit do próximo lançamento</p></div>
+      <div class="card rv" style="--d:3"><p class="lbl rt">Mês 3</p><h3 class="h3" style="padding-bottom:4px">Leitura</h3><p class="it">Relatório de 90 dias: leads, amostras e custo</p><p class="it">Ajuste de verba e de creators</p><p class="it">Plano 2027 por frente</p></div>
+    </div>
+    <div class="dec rv" style="--d:4">
+      <h3 class="h3">Decisões que pedimos à Kerry</h3>
+      <p><span>1</span>Aprovar o funil e os indicadores</p>
+      <p><span>2</span>Autorizar o teste com a verba atual</p>
+      <p><span>3</span>Indicar um ponto focal comercial para os leads</p>
+      <p><span>4</span>Priorizar a fila de aprovação</p>
+    </div>
+  </div>
+  <p class="p soft rule rv" style="--d:5"><b>Como a TGT apoia:</b> na estratégia (funil, calendário e régua de indicadores) e na execução (conteúdo, kits, eventos, creators, mídia e relatórios).</p>
+  <div class="notes">Plano de 90 dias a partir da aprovação, sem aumento de verba: o teste usa a mídia que já é investida (cerca de R$ 8,4 mil por mês nas duas marcas) com nova segmentação e objetivo. Mês 1 cria a base (fila, mensuração, públicos). Mês 2 testa creators âncora com mídia, um evento com régua completa e o kit do próximo lançamento. Mês 3 lê os resultados e decide verba e creators para 2027 com dado.</div>
+</section>
+
+<!-- 23 FECHAMENTO -->
+<section class="slide dark closing" id="s-23" data-theme="dark" data-sec="Fechamento" data-title="Juntos, vamos além">
+  <div class="strip">
+    <img src="/review-brands/assets/end-1.webp" alt="Drink vermelho com hortelã preparado com DaVinci Gourmet" loading="lazy">
+    <img src="/review-brands/assets/end-2.webp" alt="Hambúrguer em close com molho Júnior" loading="lazy">
+    <img src="/review-brands/assets/end-3.webp" alt="Frappé de chocolate DaVinci Gourmet" loading="lazy">
+    <img src="/review-brands/assets/end-4.webp" alt="Molho Alhonese Júnior com batatas fritas" loading="lazy">
+  </div>
+  <h2 class="display rv">Juntos,<br>vamos <span class="rt">além.</span></h2>
+  <div class="sign rv" style="--d:2">
+    <img src="/review-brands/assets/logo-tgt.png" alt="TGT Studio, a agência além do marketing" width="424" height="122" style="width:calc(250*var(--px));min-width:150px;height:auto">
+    <p class="lead mut" style="font-weight:400">Obrigado. Seguimos à disposição para detalhar cada frente.</p>
+  </div>
+  <div class="notes">Fechamento. Retomar as quatro decisões do slide anterior e combinar a data da primeira reunião do rito semanal. O repositório completo, com links para cada fonte, fica disponível para consulta (ver anexo).</div>
+</section>
+
+<!-- 24 ANEXO -->
+<section class="slide light" id="s-24" data-theme="light" data-sec="Fechamento" data-title="Fontes e limitações">
+  <div class="head rv">
+    <p class="eyebrow"><svg><use href="#arw"/></svg>Anexo</p>
+    <h2 class="h2">Fontes e limitações</h2>
+    <p class="p">Repositório completo, com link para cada fonte: <a href="https://claude.ai/artifact/FzEXGqi4MzEMW7ESvR5KzB" target="_blank" rel="noopener">Repositório Brands · out/25–out/26</a> (11 abas, acesso sob solicitação).</p>
+  </div>
+  <div class="scrollx rv" style="--d:1">
+    <table class="tbl">
+      <tr><th style="width:22%">Fonte</th><th style="width:36%">O que cobre</th><th style="width:42%">Limitação</th></tr>
+      <tr><td>Monday · quadro BRANDS</td><td>276 demandas e comentários-chave</td><td>Status do card não comprova publicação</td></tr>
+      <tr><td>Relatórios mensais TGT</td><td>Março a julho/26</td><td>Ago–out/26 não localizados; abril não lido</td></tr>
+      <tr><td>Reportei (PDF)</td><td>Out–dez/25: Instagram, Meta, Google</td><td>Jan–fev/26 não localizados</td></tr>
+      <tr><td>TGT Hub</td><td>Ago–out/26: métricas, mídia e posts</td><td>TikTok orgânico sem dados na integração</td></tr>
+      <tr><td>Plano Creators 2025</td><td>Proposta e acompanhamento no Drive</td><td>Valores previstos não comprovam pagamento</td></tr>
+      <tr><td>Drive · pastas Brands</td><td>Peças, briefings e jobs</td><td>Migração em jul/26 alterou as datas</td></tr>
+      <tr><td>Stories</td><td>Agregados do Reportei, out–dez/25</td><td>Stories expirados não acessíveis</td></tr>
+    </table>
+  </div>
+  <p class="p mut rv" style="--d:2">Como ler este material: fato é dado com fonte; leitura é interpretação da TGT a partir dos fatos; recomendação é proposta, com premissas a validar com a Kerry.</p>
+  <div class="notes">Detalhes das limitações. Monday: a coluna Marca está vazia em parte dos cards de 2026 (marca inferida pelo nome); comentários lidos nos cards-chave, não em todos. Relatório de abril (199 MB) e apresentações acima de 400 MB não foram lidos. Reportei: a moeda de Meta Ads da Júnior em out–dez/25 aparece como “$”. TGT Hub: Google Ads com métricas idênticas para DVG e Júnior em out/26, possível duplicidade de mapeamento. Plano Creators: orçamento de R$ 16.500 por aba, a confirmar se é por marca. Drive: pastas ligadas aos cards por nome (55 casos). Dados de vendas e sell-in não foram acessados.</div>
+</section>
+
+</main>
+
+<nav class="hud" aria-label="Navegação da apresentação">
+  <span class="hud-sec" id="hudSec">Abertura</span>
+  <div class="hud-r">
+    <button class="hb" data-act="src" title="Fontes deste slide (S)">Fontes</button>
+    <button class="hb" data-act="idx" title="Índice (I)">Índice</button>
+    <button class="hb ic" data-act="prev" aria-label="Slide anterior"><svg><use href="#i-l"/></svg></button>
+    <span class="hud-n" id="hudN"><b>01</b> / 24</span>
+    <button class="hb ic" data-act="next" aria-label="Próximo slide"><svg><use href="#i-r"/></svg></button>
+    <button class="hb ic fs" data-act="fs" aria-label="Tela cheia (F)"><svg><use href="#i-fs"/></svg></button>
+  </div>
+</nav>
+
+<div class="ovl" id="ovl" role="dialog" aria-modal="true" aria-label="Índice">
+  <div class="ovl-h"><h2>Índice</h2><button class="hb ic" data-act="idx" aria-label="Fechar índice"><svg><use href="#i-x"/></svg></button></div>
+  <div class="idx" id="idx"></div>
+</div>
+
+<aside class="drw" id="drw" aria-label="Fontes e notas do slide">
+  <button class="hb ic" data-act="src" aria-label="Fechar fontes"><svg><use href="#i-x"/></svg></button>
+  <p class="lbl" id="drwSec"></p>
+  <h3 id="drwTitle"></h3>
+  <p id="drwText"></p>
+</aside>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var total=slides.length, cur=0;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pad=function(n){return (n<10?'0':'')+n};
+  var bar=document.querySelector('.progress i'), hudN=document.getElementById('hudN'), hudSec=document.getElementById('hudSec');
+  var ovl=document.getElementById('ovl'), drw=document.getElementById('drw'), idx=document.getElementById('idx');
+
+  // index
+  var groups={}, order=[];
+  slides.forEach(function(s,i){var g=s.dataset.sec;if(!groups[g]){groups[g]=[];order.push(g)}groups[g].push(i)});
+  order.forEach(function(g){
+    var box=document.createElement('div'), h=document.createElement('h3'), ol=document.createElement('ol');
+    h.textContent=g;box.appendChild(h);
+    groups[g].forEach(function(i){
+      var li=document.createElement('li'), a=document.createElement('a');
+      a.href='#'+slides[i].id;a.dataset.i=i;a.innerHTML='<span>'+pad(i+1)+'</span>';
+      a.appendChild(document.createTextNode(slides[i].dataset.title));
+      a.addEventListener('click',function(e){e.preventDefault();toggle(ovl,false);go(i)});
+      li.appendChild(a);ol.appendChild(li);
+    });
+    box.appendChild(ol);idx.appendChild(box);
+  });
+  var links=[].slice.call(idx.querySelectorAll('a'));
+
+  function fmt(v,dec){return v.toLocaleString('pt-BR',{minimumFractionDigits:dec,maximumFractionDigits:dec})}
+  function count(el){
+    if(el.dataset.done)return;el.dataset.done=1;
+    var to=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),pre=el.dataset.pre||'',suf=el.dataset.suf||'';
+    if(reduce){return}
+    var t0=null,dur=1500;
+    function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=pre+fmt(to*e,dec)+suf;if(p<1)requestAnimationFrame(f);else el.textContent=pre+fmt(to,dec)+suf}
+    requestAnimationFrame(f);
+  }
+  function setCur(i){
+    cur=i;var s=slides[i];
+    document.body.dataset.theme=s.dataset.theme;
+    hudN.innerHTML='<b>'+pad(i+1)+'</b> / '+total;
+    hudSec.textContent=s.dataset.sec;
+    bar.style.width=((i+1)/total*100)+'%';
+    links.forEach(function(a){a.classList.toggle('cur',+a.dataset.i===i)});
+    document.getElementById('drwSec').textContent=pad(i+1)+' · '+s.dataset.sec;
+    document.getElementById('drwTitle').textContent=s.dataset.title;
+    var n=s.querySelector('.notes');document.getElementById('drwText').textContent=n?n.textContent:'Sem notas neste slide.';
+    if(history.replaceState)history.replaceState(null,'','#'+s.id);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');[].forEach.call(e.target.querySelectorAll('[data-count]'),count)}})},{threshold:.22});
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setCur(slides.indexOf(e.target))})},{rootMargin:'-49% 0px -49% 0px'});
+    slides.forEach(function(s){io.observe(s);io2.observe(s)});
+  }else{slides.forEach(function(s){s.classList.add('in')})}
+
+  function go(i){
+    i=Math.max(0,Math.min(total-1,i));
+    slides[i].scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+  }
+  function toggle(el,on){
+    var v=on===undefined?!el.classList.contains('on'):on;
+    el.classList.toggle('on',v);
+    if(el===ovl&&v)drw.classList.remove('on');
+    if(el===drw&&v)ovl.classList.remove('on');
+  }
+  function fs(){
+    if(!document.fullscreenElement){(document.documentElement.requestFullscreen||function(){}).call(document.documentElement)}
+    else if(document.exitFullscreen){document.exitFullscreen()}
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-act]');if(!b)return;
+    var a=b.dataset.act;
+    if(a==='next')go(cur+1);else if(a==='prev')go(cur-1);
+    else if(a==='idx')toggle(ovl);else if(a==='src')toggle(drw);else if(a==='fs')fs();
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.metaKey||e.ctrlKey||e.altKey)return;
+    var k=e.key;
+    if(k==='Escape'){ovl.classList.remove('on');drw.classList.remove('on');return}
+    if(ovl.classList.contains('on')&&k!=='i'&&k!=='I')return;
+    if(['ArrowRight','ArrowDown','PageDown',' '].indexOf(k)>-1){e.preventDefault();go(cur+1)}
+    else if(['ArrowLeft','ArrowUp','PageUp'].indexOf(k)>-1){e.preventDefault();go(cur-1)}
+    else if(k==='Home'){e.preventDefault();go(0)}
+    else if(k==='End'){e.preventDefault();go(total-1)}
+    else if(k==='f'||k==='F')fs();
+    else if(k==='i'||k==='I')toggle(ovl);
+    else if(k==='s'||k==='S')toggle(drw);
+  });
+
+  // deep link
+  var h=location.hash.replace('#','');
+  if(h){var t=document.getElementById(h);if(t&&t.classList.contains('slide')){t.scrollIntoView();setCur(slides.indexOf(t))}}
+  else setCur(0);
+
+  // hint
+  var hint=document.getElementById('hint');
+  setTimeout(function(){hint.classList.add('off')},4200);
+  window.addEventListener('keydown',function(){hint.classList.add('off')},{once:true});
+})();
+</script>
+</body>
+</html>
